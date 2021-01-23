@@ -1,0 +1,1174 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title "19\" DIN 41612 Backplane"
+Date "2020-12-05"
+Rev "v1.0.0"
+Comp ""
+Comment1 "Copyright (©) 2020, Patrick Baus <patrick.baus@physik.tu-darmstadt.de>"
+Comment2 "Licensed under CERN OHL v.1.2"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_DIN:C64AC J1
+U 1 1 5FD4156D
+P 900 4250
+AR Path="/5FD0564D/5FD4156D" Ref="J1"  Part="1" 
+AR Path="/5FD30CFA/5FD4156D" Ref="J7"  Part="1" 
+F 0 "J7" H 800 7750 50  0000 C CNN
+F 1 "C64AC" H 800 7650 50  0000 C CNN
+F 2 "Connector_DIN:DIN41612_C_2x32_Female_Vertical_THT" H 900 4300 50  0001 C CNN
+F 3 " ~" H 900 4300 50  0001 C CNN
+	1    900  4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_DIN:C64AC J2
+U 1 1 5FD4156E
+P 1850 4250
+AR Path="/5FD0564D/5FD4156E" Ref="J2"  Part="1" 
+AR Path="/5FD30CFA/5FD4156E" Ref="J8"  Part="1" 
+F 0 "J8" H 1750 7750 50  0000 C CNN
+F 1 "C64AC" H 1750 7650 50  0000 C CNN
+F 2 "Connector_DIN:DIN41612_C_2x32_Female_Vertical_THT" H 1850 4300 50  0001 C CNN
+F 3 " ~" H 1850 4300 50  0001 C CNN
+	1    1850 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_DIN:C64AC J3
+U 1 1 5FD1F3E2
+P 2850 4250
+AR Path="/5FD0564D/5FD1F3E2" Ref="J3"  Part="1" 
+AR Path="/5FD30CFA/5FD1F3E2" Ref="J9"  Part="1" 
+F 0 "J9" H 2750 7750 50  0000 C CNN
+F 1 "C64AC" H 2750 7650 50  0000 C CNN
+F 2 "Connector_DIN:DIN41612_C_2x32_Female_Vertical_THT" H 2850 4300 50  0001 C CNN
+F 3 " ~" H 2850 4300 50  0001 C CNN
+	1    2850 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_DIN:C64AC J4
+U 1 1 5FD41570
+P 4000 4250
+AR Path="/5FD0564D/5FD41570" Ref="J4"  Part="1" 
+AR Path="/5FD30CFA/5FD41570" Ref="J10"  Part="1" 
+F 0 "J10" H 3900 7750 50  0000 C CNN
+F 1 "C64AC" H 3900 7650 50  0000 C CNN
+F 2 "Connector_DIN:DIN41612_C_2x32_Female_Vertical_THT" H 4000 4300 50  0001 C CNN
+F 3 " ~" H 4000 4300 50  0001 C CNN
+	1    4000 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_DIN:C64AC J5
+U 1 1 5FD1F3EE
+P 5150 4250
+AR Path="/5FD0564D/5FD1F3EE" Ref="J5"  Part="1" 
+AR Path="/5FD30CFA/5FD1F3EE" Ref="J11"  Part="1" 
+F 0 "J11" H 5050 7750 50  0000 C CNN
+F 1 "C64AC" H 5050 7650 50  0000 C CNN
+F 2 "Connector_DIN:DIN41612_C_2x32_Female_Vertical_THT" H 5150 4300 50  0001 C CNN
+F 3 " ~" H 5150 4300 50  0001 C CNN
+	1    5150 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_DIN:C64AC J6
+U 1 1 5FD1F3F4
+P 6250 4250
+AR Path="/5FD0564D/5FD1F3F4" Ref="J6"  Part="1" 
+AR Path="/5FD30CFA/5FD1F3F4" Ref="J12"  Part="1" 
+F 0 "J12" H 6150 7750 50  0000 C CNN
+F 1 "C64AC" H 6150 7650 50  0000 C CNN
+F 2 "Connector_DIN:DIN41612_C_2x32_Female_Vertical_THT" H 6250 4300 50  0001 C CNN
+F 3 " ~" H 6250 4300 50  0001 C CNN
+	1    6250 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR013
+U 1 1 5FD1F3FA
+P 5650 950
+AR Path="/5FD0564D/5FD1F3FA" Ref="#PWR013"  Part="1" 
+AR Path="/5FD30CFA/5FD1F3FA" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 5650 800 50  0001 C CNN
+F 1 "+15V" H 5700 1150 50  0000 C CNN
+F 2 "" H 5650 950 50  0001 C CNN
+F 3 "" H 5650 950 50  0001 C CNN
+	1    5650 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1050 5650 1050
+Wire Wire Line
+	5650 1050 5650 950 
+Wire Wire Line
+	5450 1150 5650 1150
+Connection ~ 5650 1050
+Wire Wire Line
+	5450 1250 5650 1250
+Wire Wire Line
+	5650 1050 5650 1150
+Connection ~ 5650 1150
+Wire Wire Line
+	5650 1150 5650 1250
+Wire Wire Line
+	5450 1350 5650 1350
+Wire Wire Line
+	5650 1350 5650 1250
+Connection ~ 5650 1250
+Wire Wire Line
+	5450 1450 5650 1450
+Wire Wire Line
+	5650 1450 5650 1350
+Connection ~ 5650 1350
+Wire Wire Line
+	5450 1550 5650 1550
+Wire Wire Line
+	5650 1550 5650 1450
+Connection ~ 5650 1450
+$Comp
+L power:+15V #PWR016
+U 1 1 5FD1F411
+P 6750 950
+AR Path="/5FD0564D/5FD1F411" Ref="#PWR016"  Part="1" 
+AR Path="/5FD30CFA/5FD1F411" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 6750 800 50  0001 C CNN
+F 1 "+15V" H 6800 1150 50  0000 C CNN
+F 2 "" H 6750 950 50  0001 C CNN
+F 3 "" H 6750 950 50  0001 C CNN
+	1    6750 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 1050 6750 1050
+Wire Wire Line
+	6750 1050 6750 950 
+Wire Wire Line
+	6550 1150 6750 1150
+Connection ~ 6750 1050
+Wire Wire Line
+	6550 1250 6750 1250
+Wire Wire Line
+	6750 1050 6750 1150
+Connection ~ 6750 1150
+Wire Wire Line
+	6750 1150 6750 1250
+Wire Wire Line
+	6550 1350 6750 1350
+Wire Wire Line
+	6750 1350 6750 1250
+Connection ~ 6750 1250
+Wire Wire Line
+	6550 1450 6750 1450
+Wire Wire Line
+	6750 1450 6750 1350
+Connection ~ 6750 1350
+Wire Wire Line
+	6550 1550 6750 1550
+Wire Wire Line
+	6750 1550 6750 1450
+Connection ~ 6750 1450
+$Comp
+L power:-15V #PWR03
+U 1 1 5FD1F428
+P 1400 6750
+AR Path="/5FD0564D/5FD1F428" Ref="#PWR03"  Part="1" 
+AR Path="/5FD30CFA/5FD1F428" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 1400 6850 50  0001 C CNN
+F 1 "-15V" H 1450 6950 50  0000 C CNN
+F 2 "" H 1400 6750 50  0001 C CNN
+F 3 "" H 1400 6750 50  0001 C CNN
+	1    1400 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 6850 1400 6850
+Wire Wire Line
+	1400 6850 1400 6750
+Wire Wire Line
+	1200 6950 1400 6950
+Wire Wire Line
+	1400 6950 1400 6850
+Connection ~ 1400 6850
+Wire Wire Line
+	1200 7050 1400 7050
+Wire Wire Line
+	1400 7050 1400 6950
+Connection ~ 1400 6950
+Wire Wire Line
+	1200 7150 1400 7150
+Wire Wire Line
+	1400 7150 1400 7050
+Connection ~ 1400 7050
+Wire Wire Line
+	1200 7250 1400 7250
+Wire Wire Line
+	1400 7250 1400 7150
+Connection ~ 1400 7150
+Wire Wire Line
+	1200 7350 1400 7350
+Wire Wire Line
+	1400 7350 1400 7250
+Connection ~ 1400 7250
+$Comp
+L power:-15V #PWR06
+U 1 1 5FD1F43F
+P 2350 6750
+AR Path="/5FD0564D/5FD1F43F" Ref="#PWR06"  Part="1" 
+AR Path="/5FD30CFA/5FD1F43F" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 2350 6850 50  0001 C CNN
+F 1 "-15V" H 2400 6950 50  0000 C CNN
+F 2 "" H 2350 6750 50  0001 C CNN
+F 3 "" H 2350 6750 50  0001 C CNN
+	1    2350 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6850 2350 6850
+Wire Wire Line
+	2350 6850 2350 6750
+Wire Wire Line
+	2150 6950 2350 6950
+Wire Wire Line
+	2350 6950 2350 6850
+Connection ~ 2350 6850
+Wire Wire Line
+	2150 7050 2350 7050
+Wire Wire Line
+	2350 7050 2350 6950
+Connection ~ 2350 6950
+Wire Wire Line
+	2150 7150 2350 7150
+Wire Wire Line
+	2350 7150 2350 7050
+Connection ~ 2350 7050
+Wire Wire Line
+	2150 7250 2350 7250
+Wire Wire Line
+	2350 7250 2350 7150
+Connection ~ 2350 7150
+Wire Wire Line
+	2150 7350 2350 7350
+Wire Wire Line
+	2350 7350 2350 7250
+Connection ~ 2350 7250
+$Comp
+L power:-15V #PWR09
+U 1 1 5FD1F456
+P 3350 6750
+AR Path="/5FD0564D/5FD1F456" Ref="#PWR09"  Part="1" 
+AR Path="/5FD30CFA/5FD1F456" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 3350 6850 50  0001 C CNN
+F 1 "-15V" H 3400 6950 50  0000 C CNN
+F 2 "" H 3350 6750 50  0001 C CNN
+F 3 "" H 3350 6750 50  0001 C CNN
+	1    3350 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6850 3350 6850
+Wire Wire Line
+	3350 6850 3350 6750
+Wire Wire Line
+	3150 6950 3350 6950
+Wire Wire Line
+	3350 6950 3350 6850
+Connection ~ 3350 6850
+Wire Wire Line
+	3150 7050 3350 7050
+Wire Wire Line
+	3350 7050 3350 6950
+Connection ~ 3350 6950
+Wire Wire Line
+	3150 7150 3350 7150
+Wire Wire Line
+	3350 7150 3350 7050
+Connection ~ 3350 7050
+Wire Wire Line
+	3150 7250 3350 7250
+Wire Wire Line
+	3350 7250 3350 7150
+Connection ~ 3350 7150
+Wire Wire Line
+	3150 7350 3350 7350
+Wire Wire Line
+	3350 7350 3350 7250
+Connection ~ 3350 7250
+$Comp
+L power:-15V #PWR012
+U 1 1 5FD41578
+P 4500 6750
+AR Path="/5FD0564D/5FD41578" Ref="#PWR012"  Part="1" 
+AR Path="/5FD30CFA/5FD41578" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 4500 6850 50  0001 C CNN
+F 1 "-15V" H 4550 6950 50  0000 C CNN
+F 2 "" H 4500 6750 50  0001 C CNN
+F 3 "" H 4500 6750 50  0001 C CNN
+	1    4500 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6850 4500 6850
+Wire Wire Line
+	4500 6850 4500 6750
+Wire Wire Line
+	4300 6950 4500 6950
+Wire Wire Line
+	4500 6950 4500 6850
+Connection ~ 4500 6850
+Wire Wire Line
+	4300 7050 4500 7050
+Wire Wire Line
+	4500 7050 4500 6950
+Connection ~ 4500 6950
+Wire Wire Line
+	4300 7150 4500 7150
+Wire Wire Line
+	4500 7150 4500 7050
+Connection ~ 4500 7050
+Wire Wire Line
+	4300 7250 4500 7250
+Wire Wire Line
+	4500 7250 4500 7150
+Connection ~ 4500 7150
+Wire Wire Line
+	4300 7350 4500 7350
+Wire Wire Line
+	4500 7350 4500 7250
+Connection ~ 4500 7250
+$Comp
+L power:-15V #PWR015
+U 1 1 5FD41579
+P 5650 6750
+AR Path="/5FD0564D/5FD41579" Ref="#PWR015"  Part="1" 
+AR Path="/5FD30CFA/5FD41579" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 5650 6850 50  0001 C CNN
+F 1 "-15V" H 5700 6950 50  0000 C CNN
+F 2 "" H 5650 6750 50  0001 C CNN
+F 3 "" H 5650 6750 50  0001 C CNN
+	1    5650 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 6850 5650 6850
+Wire Wire Line
+	5650 6850 5650 6750
+Wire Wire Line
+	5450 6950 5650 6950
+Wire Wire Line
+	5650 6950 5650 6850
+Connection ~ 5650 6850
+Wire Wire Line
+	5450 7050 5650 7050
+Wire Wire Line
+	5650 7050 5650 6950
+Connection ~ 5650 6950
+Wire Wire Line
+	5450 7150 5650 7150
+Wire Wire Line
+	5650 7150 5650 7050
+Connection ~ 5650 7050
+Wire Wire Line
+	5450 7250 5650 7250
+Wire Wire Line
+	5650 7250 5650 7150
+Connection ~ 5650 7150
+Wire Wire Line
+	5450 7350 5650 7350
+Wire Wire Line
+	5650 7350 5650 7250
+Connection ~ 5650 7250
+$Comp
+L power:-15V #PWR018
+U 1 1 5FD1F49B
+P 6750 6750
+AR Path="/5FD0564D/5FD1F49B" Ref="#PWR018"  Part="1" 
+AR Path="/5FD30CFA/5FD1F49B" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 6750 6850 50  0001 C CNN
+F 1 "-15V" H 6800 6950 50  0000 C CNN
+F 2 "" H 6750 6750 50  0001 C CNN
+F 3 "" H 6750 6750 50  0001 C CNN
+	1    6750 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 6850 6750 6850
+Wire Wire Line
+	6750 6850 6750 6750
+Wire Wire Line
+	6550 6950 6750 6950
+Wire Wire Line
+	6750 6950 6750 6850
+Connection ~ 6750 6850
+Wire Wire Line
+	6550 7050 6750 7050
+Wire Wire Line
+	6750 7050 6750 6950
+Connection ~ 6750 6950
+Wire Wire Line
+	6550 7150 6750 7150
+Wire Wire Line
+	6750 7150 6750 7050
+Connection ~ 6750 7050
+Wire Wire Line
+	6550 7250 6750 7250
+Wire Wire Line
+	6750 7250 6750 7150
+Connection ~ 6750 7150
+Wire Wire Line
+	6550 7350 6750 7350
+Wire Wire Line
+	6750 7350 6750 7250
+Connection ~ 6750 7250
+$Comp
+L power:GND #PWR02
+U 1 1 5FD1F4B2
+P 1400 4650
+AR Path="/5FD0564D/5FD1F4B2" Ref="#PWR02"  Part="1" 
+AR Path="/5FD30CFA/5FD1F4B2" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 1400 4400 50  0001 C CNN
+F 1 "GND" H 1450 4450 50  0000 C CNN
+F 2 "" H 1400 4650 50  0001 C CNN
+F 3 "" H 1400 4650 50  0001 C CNN
+	1    1400 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4450 1400 4450
+Wire Wire Line
+	1400 4450 1400 4550
+Wire Wire Line
+	1400 4450 1400 4350
+Wire Wire Line
+	1400 4350 1200 4350
+Connection ~ 1400 4450
+Wire Wire Line
+	1200 4550 1400 4550
+Connection ~ 1400 4550
+Wire Wire Line
+	1400 4550 1400 4650
+Wire Wire Line
+	1200 4250 1400 4250
+Wire Wire Line
+	1400 4250 1400 4350
+Connection ~ 1400 4350
+Wire Wire Line
+	1200 4150 1400 4150
+Wire Wire Line
+	1400 4150 1400 4250
+Connection ~ 1400 4250
+Wire Wire Line
+	1200 4050 1400 4050
+Wire Wire Line
+	1400 4050 1400 4150
+Connection ~ 1400 4150
+Wire Wire Line
+	1200 3950 1400 3950
+Wire Wire Line
+	1400 3950 1400 4050
+Connection ~ 1400 4050
+Wire Wire Line
+	1200 3850 1400 3850
+Wire Wire Line
+	1400 3850 1400 3950
+Connection ~ 1400 3950
+$Comp
+L power:GND #PWR05
+U 1 1 5FD1F4CF
+P 2350 4650
+AR Path="/5FD0564D/5FD1F4CF" Ref="#PWR05"  Part="1" 
+AR Path="/5FD30CFA/5FD1F4CF" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 2350 4400 50  0001 C CNN
+F 1 "GND" H 2400 4450 50  0000 C CNN
+F 2 "" H 2350 4650 50  0001 C CNN
+F 3 "" H 2350 4650 50  0001 C CNN
+	1    2350 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4450 2350 4450
+Wire Wire Line
+	2350 4450 2350 4550
+Wire Wire Line
+	2350 4450 2350 4350
+Wire Wire Line
+	2350 4350 2150 4350
+Connection ~ 2350 4450
+Wire Wire Line
+	2150 4550 2350 4550
+Connection ~ 2350 4550
+Wire Wire Line
+	2350 4550 2350 4650
+Wire Wire Line
+	2150 4250 2350 4250
+Wire Wire Line
+	2350 4250 2350 4350
+Connection ~ 2350 4350
+Wire Wire Line
+	2150 4150 2350 4150
+Wire Wire Line
+	2350 4150 2350 4250
+Connection ~ 2350 4250
+Wire Wire Line
+	2150 4050 2350 4050
+Wire Wire Line
+	2350 4050 2350 4150
+Connection ~ 2350 4150
+Wire Wire Line
+	2150 3950 2350 3950
+Wire Wire Line
+	2350 3950 2350 4050
+Connection ~ 2350 4050
+Wire Wire Line
+	2150 3850 2350 3850
+Wire Wire Line
+	2350 3850 2350 3950
+Connection ~ 2350 3950
+$Comp
+L power:GND #PWR08
+U 1 1 5FD4157D
+P 3350 4650
+AR Path="/5FD0564D/5FD4157D" Ref="#PWR08"  Part="1" 
+AR Path="/5FD30CFA/5FD4157D" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 3350 4400 50  0001 C CNN
+F 1 "GND" H 3400 4450 50  0000 C CNN
+F 2 "" H 3350 4650 50  0001 C CNN
+F 3 "" H 3350 4650 50  0001 C CNN
+	1    3350 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4450 3350 4450
+Wire Wire Line
+	3350 4450 3350 4550
+Wire Wire Line
+	3350 4450 3350 4350
+Wire Wire Line
+	3350 4350 3150 4350
+Connection ~ 3350 4450
+Wire Wire Line
+	3150 4550 3350 4550
+Connection ~ 3350 4550
+Wire Wire Line
+	3350 4550 3350 4650
+Wire Wire Line
+	3150 4250 3350 4250
+Wire Wire Line
+	3350 4250 3350 4350
+Connection ~ 3350 4350
+Wire Wire Line
+	3150 4150 3350 4150
+Wire Wire Line
+	3350 4150 3350 4250
+Connection ~ 3350 4250
+Wire Wire Line
+	3150 4050 3350 4050
+Wire Wire Line
+	3350 4050 3350 4150
+Connection ~ 3350 4150
+Wire Wire Line
+	3150 3950 3350 3950
+Wire Wire Line
+	3350 3950 3350 4050
+Connection ~ 3350 4050
+Wire Wire Line
+	3150 3850 3350 3850
+Wire Wire Line
+	3350 3850 3350 3950
+Connection ~ 3350 3950
+$Comp
+L power:GND #PWR011
+U 1 1 5FD1F509
+P 4500 4650
+AR Path="/5FD0564D/5FD1F509" Ref="#PWR011"  Part="1" 
+AR Path="/5FD30CFA/5FD1F509" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 4500 4400 50  0001 C CNN
+F 1 "GND" H 4550 4450 50  0000 C CNN
+F 2 "" H 4500 4650 50  0001 C CNN
+F 3 "" H 4500 4650 50  0001 C CNN
+	1    4500 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4450 4500 4450
+Wire Wire Line
+	4500 4450 4500 4550
+Wire Wire Line
+	4500 4450 4500 4350
+Wire Wire Line
+	4500 4350 4300 4350
+Connection ~ 4500 4450
+Wire Wire Line
+	4300 4550 4500 4550
+Connection ~ 4500 4550
+Wire Wire Line
+	4500 4550 4500 4650
+Wire Wire Line
+	4300 4250 4500 4250
+Wire Wire Line
+	4500 4250 4500 4350
+Connection ~ 4500 4350
+Wire Wire Line
+	4300 4150 4500 4150
+Wire Wire Line
+	4500 4150 4500 4250
+Connection ~ 4500 4250
+Wire Wire Line
+	4300 4050 4500 4050
+Wire Wire Line
+	4500 4050 4500 4150
+Connection ~ 4500 4150
+Wire Wire Line
+	4300 3950 4500 3950
+Wire Wire Line
+	4500 3950 4500 4050
+Connection ~ 4500 4050
+Wire Wire Line
+	4300 3850 4500 3850
+Wire Wire Line
+	4500 3850 4500 3950
+Connection ~ 4500 3950
+Connection ~ 4500 1450
+Wire Wire Line
+	4500 1550 4500 1450
+Wire Wire Line
+	4300 1550 4500 1550
+Connection ~ 4500 1350
+Wire Wire Line
+	4500 1450 4500 1350
+Wire Wire Line
+	4300 1450 4500 1450
+Connection ~ 4500 1250
+Wire Wire Line
+	4500 1350 4500 1250
+Wire Wire Line
+	4300 1350 4500 1350
+Wire Wire Line
+	4500 1150 4500 1250
+Connection ~ 4500 1150
+Wire Wire Line
+	4500 1050 4500 1150
+Wire Wire Line
+	4300 1250 4500 1250
+Connection ~ 4500 1050
+Wire Wire Line
+	4300 1150 4500 1150
+Wire Wire Line
+	4500 1050 4500 950 
+Wire Wire Line
+	4300 1050 4500 1050
+$Comp
+L power:+15V #PWR010
+U 1 1 5FD1F537
+P 4500 950
+AR Path="/5FD0564D/5FD1F537" Ref="#PWR010"  Part="1" 
+AR Path="/5FD30CFA/5FD1F537" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 4500 800 50  0001 C CNN
+F 1 "+15V" H 4550 1150 50  0000 C CNN
+F 2 "" H 4500 950 50  0001 C CNN
+F 3 "" H 4500 950 50  0001 C CNN
+	1    4500 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 3350 1450
+Wire Wire Line
+	3350 1550 3350 1450
+Wire Wire Line
+	3150 1550 3350 1550
+Connection ~ 3350 1350
+Wire Wire Line
+	3350 1450 3350 1350
+Wire Wire Line
+	3150 1450 3350 1450
+Connection ~ 3350 1250
+Wire Wire Line
+	3350 1350 3350 1250
+Wire Wire Line
+	3150 1350 3350 1350
+Wire Wire Line
+	3350 1150 3350 1250
+Connection ~ 3350 1150
+Wire Wire Line
+	3350 1050 3350 1150
+Wire Wire Line
+	3150 1250 3350 1250
+Connection ~ 3350 1050
+Wire Wire Line
+	3150 1150 3350 1150
+Wire Wire Line
+	3350 1050 3350 950 
+Wire Wire Line
+	3150 1050 3350 1050
+$Comp
+L power:+15V #PWR07
+U 1 1 5FD1F54E
+P 3350 950
+AR Path="/5FD0564D/5FD1F54E" Ref="#PWR07"  Part="1" 
+AR Path="/5FD30CFA/5FD1F54E" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 3350 800 50  0001 C CNN
+F 1 "+15V" H 3400 1150 50  0000 C CNN
+F 2 "" H 3350 950 50  0001 C CNN
+F 3 "" H 3350 950 50  0001 C CNN
+	1    3350 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 1450
+Wire Wire Line
+	2350 1550 2350 1450
+Wire Wire Line
+	2150 1550 2350 1550
+Connection ~ 2350 1350
+Wire Wire Line
+	2350 1450 2350 1350
+Wire Wire Line
+	2150 1450 2350 1450
+Connection ~ 2350 1250
+Wire Wire Line
+	2350 1350 2350 1250
+Wire Wire Line
+	2150 1350 2350 1350
+Wire Wire Line
+	2350 1150 2350 1250
+Connection ~ 2350 1150
+Wire Wire Line
+	2350 1050 2350 1150
+Wire Wire Line
+	2150 1250 2350 1250
+Connection ~ 2350 1050
+Wire Wire Line
+	2150 1150 2350 1150
+Wire Wire Line
+	2350 1050 2350 950 
+Wire Wire Line
+	2150 1050 2350 1050
+$Comp
+L power:+15V #PWR04
+U 1 1 5FD1F565
+P 2350 950
+AR Path="/5FD0564D/5FD1F565" Ref="#PWR04"  Part="1" 
+AR Path="/5FD30CFA/5FD1F565" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 2350 800 50  0001 C CNN
+F 1 "+15V" H 2400 1150 50  0000 C CNN
+F 2 "" H 2350 950 50  0001 C CNN
+F 3 "" H 2350 950 50  0001 C CNN
+	1    2350 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 1400 1450
+Wire Wire Line
+	1400 1550 1400 1450
+Wire Wire Line
+	1200 1550 1400 1550
+Connection ~ 1400 1350
+Wire Wire Line
+	1400 1450 1400 1350
+Wire Wire Line
+	1200 1450 1400 1450
+Connection ~ 1400 1250
+Wire Wire Line
+	1400 1350 1400 1250
+Wire Wire Line
+	1200 1350 1400 1350
+Wire Wire Line
+	1400 1150 1400 1250
+Connection ~ 1400 1150
+Wire Wire Line
+	1400 1050 1400 1150
+Wire Wire Line
+	1200 1250 1400 1250
+Connection ~ 1400 1050
+Wire Wire Line
+	1200 1150 1400 1150
+Wire Wire Line
+	1400 1050 1400 950 
+Wire Wire Line
+	1200 1050 1400 1050
+$Comp
+L power:+15V #PWR01
+U 1 1 5FD1F57C
+P 1400 950
+AR Path="/5FD0564D/5FD1F57C" Ref="#PWR01"  Part="1" 
+AR Path="/5FD30CFA/5FD1F57C" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 1400 800 50  0001 C CNN
+F 1 "+15V" H 1450 1150 50  0000 C CNN
+F 2 "" H 1400 950 50  0001 C CNN
+F 3 "" H 1400 950 50  0001 C CNN
+	1    1400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5FD41583
+P 5650 4650
+AR Path="/5FD0564D/5FD41583" Ref="#PWR014"  Part="1" 
+AR Path="/5FD30CFA/5FD41583" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 5650 4400 50  0001 C CNN
+F 1 "GND" H 5700 4450 50  0000 C CNN
+F 2 "" H 5650 4650 50  0001 C CNN
+F 3 "" H 5650 4650 50  0001 C CNN
+	1    5650 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4450 5650 4450
+Wire Wire Line
+	5650 4450 5650 4550
+Wire Wire Line
+	5650 4450 5650 4350
+Wire Wire Line
+	5650 4350 5450 4350
+Connection ~ 5650 4450
+Wire Wire Line
+	5450 4550 5650 4550
+Connection ~ 5650 4550
+Wire Wire Line
+	5650 4550 5650 4650
+Wire Wire Line
+	5450 4250 5650 4250
+Wire Wire Line
+	5650 4250 5650 4350
+Connection ~ 5650 4350
+Wire Wire Line
+	5450 4150 5650 4150
+Wire Wire Line
+	5650 4150 5650 4250
+Connection ~ 5650 4250
+Wire Wire Line
+	5450 4050 5650 4050
+Wire Wire Line
+	5650 4050 5650 4150
+Connection ~ 5650 4150
+Wire Wire Line
+	5450 3950 5650 3950
+Wire Wire Line
+	5650 3950 5650 4050
+Connection ~ 5650 4050
+Wire Wire Line
+	5450 3850 5650 3850
+Wire Wire Line
+	5650 3850 5650 3950
+Connection ~ 5650 3950
+$Comp
+L power:GND #PWR017
+U 1 1 5FD1F59F
+P 6750 4650
+AR Path="/5FD0564D/5FD1F59F" Ref="#PWR017"  Part="1" 
+AR Path="/5FD30CFA/5FD1F59F" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 6750 4400 50  0001 C CNN
+F 1 "GND" H 6800 4450 50  0000 C CNN
+F 2 "" H 6750 4650 50  0001 C CNN
+F 3 "" H 6750 4650 50  0001 C CNN
+	1    6750 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4450 6750 4450
+Wire Wire Line
+	6750 4450 6750 4550
+Wire Wire Line
+	6750 4450 6750 4350
+Wire Wire Line
+	6750 4350 6550 4350
+Connection ~ 6750 4450
+Wire Wire Line
+	6550 4550 6750 4550
+Connection ~ 6750 4550
+Wire Wire Line
+	6750 4550 6750 4650
+Wire Wire Line
+	6550 4250 6750 4250
+Wire Wire Line
+	6750 4250 6750 4350
+Connection ~ 6750 4350
+Wire Wire Line
+	6550 4150 6750 4150
+Wire Wire Line
+	6750 4150 6750 4250
+Connection ~ 6750 4250
+Wire Wire Line
+	6550 4050 6750 4050
+Wire Wire Line
+	6750 4050 6750 4150
+Connection ~ 6750 4150
+Wire Wire Line
+	6550 3950 6750 3950
+Wire Wire Line
+	6750 3950 6750 4050
+Connection ~ 6750 4050
+Wire Wire Line
+	6550 3850 6750 3850
+Wire Wire Line
+	6750 3850 6750 3950
+Connection ~ 6750 3950
+NoConn ~ 1200 1650
+NoConn ~ 1200 1750
+NoConn ~ 1200 1850
+NoConn ~ 1200 1950
+NoConn ~ 1200 2050
+NoConn ~ 1200 2150
+NoConn ~ 1200 2250
+NoConn ~ 1200 2350
+NoConn ~ 1200 2450
+NoConn ~ 1200 2550
+NoConn ~ 1200 2650
+NoConn ~ 1200 2750
+NoConn ~ 1200 2850
+NoConn ~ 1200 2950
+NoConn ~ 1200 3050
+NoConn ~ 1200 3150
+NoConn ~ 1200 3250
+NoConn ~ 1200 3350
+NoConn ~ 1200 3450
+NoConn ~ 1200 3550
+NoConn ~ 1200 3650
+NoConn ~ 1200 3750
+NoConn ~ 2150 1650
+NoConn ~ 2150 1750
+NoConn ~ 2150 1850
+NoConn ~ 2150 1950
+NoConn ~ 2150 2050
+NoConn ~ 2150 2150
+NoConn ~ 2150 2250
+NoConn ~ 2150 2350
+NoConn ~ 2150 2450
+NoConn ~ 2150 2550
+NoConn ~ 2150 2650
+NoConn ~ 2150 2750
+NoConn ~ 2150 2850
+NoConn ~ 2150 2950
+NoConn ~ 2150 3050
+NoConn ~ 2150 3150
+NoConn ~ 2150 3250
+NoConn ~ 2150 3350
+NoConn ~ 2150 3450
+NoConn ~ 2150 3550
+NoConn ~ 2150 3650
+NoConn ~ 2150 3750
+NoConn ~ 3150 1650
+NoConn ~ 3150 1750
+NoConn ~ 3150 1850
+NoConn ~ 3150 1950
+NoConn ~ 3150 2050
+NoConn ~ 3150 2150
+NoConn ~ 3150 2250
+NoConn ~ 3150 2350
+NoConn ~ 3150 2450
+NoConn ~ 3150 2550
+NoConn ~ 3150 2650
+NoConn ~ 3150 2750
+NoConn ~ 3150 2850
+NoConn ~ 3150 2950
+NoConn ~ 3150 3050
+NoConn ~ 3150 3150
+NoConn ~ 3150 3250
+NoConn ~ 3150 3350
+NoConn ~ 3150 3450
+NoConn ~ 3150 3550
+NoConn ~ 3150 3650
+NoConn ~ 3150 3750
+NoConn ~ 4300 1650
+NoConn ~ 4300 1750
+NoConn ~ 4300 1850
+NoConn ~ 4300 1950
+NoConn ~ 4300 2050
+NoConn ~ 4300 2150
+NoConn ~ 4300 2250
+NoConn ~ 4300 2350
+NoConn ~ 4300 2450
+NoConn ~ 4300 2550
+NoConn ~ 4300 2650
+NoConn ~ 4300 2750
+NoConn ~ 4300 2850
+NoConn ~ 4300 2950
+NoConn ~ 4300 3050
+NoConn ~ 4300 3150
+NoConn ~ 4300 3250
+NoConn ~ 4300 3350
+NoConn ~ 4300 3450
+NoConn ~ 4300 3550
+NoConn ~ 4300 3650
+NoConn ~ 4300 3750
+NoConn ~ 5450 1650
+NoConn ~ 5450 1750
+NoConn ~ 5450 1850
+NoConn ~ 5450 1950
+NoConn ~ 5450 2050
+NoConn ~ 5450 2150
+NoConn ~ 5450 2250
+NoConn ~ 5450 2350
+NoConn ~ 5450 2450
+NoConn ~ 5450 2550
+NoConn ~ 5450 2650
+NoConn ~ 5450 2750
+NoConn ~ 5450 2850
+NoConn ~ 5450 2950
+NoConn ~ 5450 3050
+NoConn ~ 5450 3150
+NoConn ~ 5450 3250
+NoConn ~ 5450 3350
+NoConn ~ 5450 3450
+NoConn ~ 5450 3550
+NoConn ~ 5450 3650
+NoConn ~ 5450 3750
+NoConn ~ 6550 1650
+NoConn ~ 6550 1750
+NoConn ~ 6550 1850
+NoConn ~ 6550 1950
+NoConn ~ 6550 2050
+NoConn ~ 6550 2150
+NoConn ~ 6550 2250
+NoConn ~ 6550 2350
+NoConn ~ 6550 2450
+NoConn ~ 6550 2550
+NoConn ~ 6550 2650
+NoConn ~ 6550 2750
+NoConn ~ 6550 2850
+NoConn ~ 6550 2950
+NoConn ~ 6550 3050
+NoConn ~ 6550 3150
+NoConn ~ 6550 3250
+NoConn ~ 6550 3350
+NoConn ~ 6550 3450
+NoConn ~ 6550 3550
+NoConn ~ 6550 3650
+NoConn ~ 6550 3750
+NoConn ~ 1200 4650
+NoConn ~ 1200 4750
+NoConn ~ 1200 4850
+NoConn ~ 1200 4950
+NoConn ~ 1200 5050
+NoConn ~ 1200 5150
+NoConn ~ 1200 5250
+NoConn ~ 1200 5350
+NoConn ~ 1200 5450
+NoConn ~ 1200 5550
+NoConn ~ 1200 5650
+NoConn ~ 1200 5750
+NoConn ~ 1200 5850
+NoConn ~ 1200 5950
+NoConn ~ 1200 6050
+NoConn ~ 1200 6150
+NoConn ~ 1200 6250
+NoConn ~ 1200 6350
+NoConn ~ 1200 6450
+NoConn ~ 1200 6550
+NoConn ~ 1200 6650
+NoConn ~ 1200 6750
+NoConn ~ 2150 4650
+NoConn ~ 2150 4750
+NoConn ~ 2150 4850
+NoConn ~ 2150 4950
+NoConn ~ 2150 5050
+NoConn ~ 2150 5150
+NoConn ~ 2150 5250
+NoConn ~ 2150 5350
+NoConn ~ 2150 5450
+NoConn ~ 2150 5550
+NoConn ~ 2150 5650
+NoConn ~ 2150 5750
+NoConn ~ 2150 5850
+NoConn ~ 2150 5950
+NoConn ~ 2150 6050
+NoConn ~ 2150 6150
+NoConn ~ 2150 6250
+NoConn ~ 2150 6350
+NoConn ~ 2150 6450
+NoConn ~ 2150 6550
+NoConn ~ 2150 6650
+NoConn ~ 2150 6750
+NoConn ~ 3150 4650
+NoConn ~ 3150 4750
+NoConn ~ 3150 4850
+NoConn ~ 3150 4950
+NoConn ~ 3150 5050
+NoConn ~ 3150 5150
+NoConn ~ 3150 5250
+NoConn ~ 3150 5350
+NoConn ~ 3150 5450
+NoConn ~ 3150 5550
+NoConn ~ 3150 5650
+NoConn ~ 3150 5750
+NoConn ~ 3150 5850
+NoConn ~ 3150 5950
+NoConn ~ 3150 6050
+NoConn ~ 3150 6150
+NoConn ~ 3150 6250
+NoConn ~ 3150 6350
+NoConn ~ 3150 6450
+NoConn ~ 3150 6550
+NoConn ~ 3150 6650
+NoConn ~ 3150 6750
+NoConn ~ 4300 4650
+NoConn ~ 4300 4750
+NoConn ~ 4300 4850
+NoConn ~ 4300 4950
+NoConn ~ 4300 5050
+NoConn ~ 4300 5150
+NoConn ~ 4300 5250
+NoConn ~ 4300 5350
+NoConn ~ 4300 5450
+NoConn ~ 4300 5550
+NoConn ~ 4300 5650
+NoConn ~ 4300 5750
+NoConn ~ 4300 5850
+NoConn ~ 4300 5950
+NoConn ~ 4300 6050
+NoConn ~ 4300 6150
+NoConn ~ 4300 6250
+NoConn ~ 4300 6350
+NoConn ~ 4300 6450
+NoConn ~ 4300 6550
+NoConn ~ 4300 6650
+NoConn ~ 4300 6750
+NoConn ~ 5450 4650
+NoConn ~ 5450 4750
+NoConn ~ 5450 4850
+NoConn ~ 5450 4950
+NoConn ~ 5450 5050
+NoConn ~ 5450 5150
+NoConn ~ 5450 5250
+NoConn ~ 5450 5350
+NoConn ~ 5450 5450
+NoConn ~ 5450 5550
+NoConn ~ 5450 5650
+NoConn ~ 5450 5750
+NoConn ~ 5450 5850
+NoConn ~ 5450 5950
+NoConn ~ 5450 6050
+NoConn ~ 5450 6150
+NoConn ~ 5450 6250
+NoConn ~ 5450 6350
+NoConn ~ 5450 6450
+NoConn ~ 5450 6550
+NoConn ~ 5450 6650
+NoConn ~ 5450 6750
+NoConn ~ 6550 4650
+NoConn ~ 6550 4750
+NoConn ~ 6550 4850
+NoConn ~ 6550 4950
+NoConn ~ 6550 5050
+NoConn ~ 6550 5150
+NoConn ~ 6550 5250
+NoConn ~ 6550 5350
+NoConn ~ 6550 5450
+NoConn ~ 6550 5550
+NoConn ~ 6550 5650
+NoConn ~ 6550 5750
+NoConn ~ 6550 5850
+NoConn ~ 6550 5950
+NoConn ~ 6550 6050
+NoConn ~ 6550 6150
+NoConn ~ 6550 6250
+NoConn ~ 6550 6350
+NoConn ~ 6550 6450
+NoConn ~ 6550 6550
+NoConn ~ 6550 6650
+NoConn ~ 6550 6750
+$EndSCHEMATC
