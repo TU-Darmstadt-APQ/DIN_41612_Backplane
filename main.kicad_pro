@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.19888,
-          "height": 2.99974,
-          "width": 2.99974
+          "drill": 0.0,
+          "height": 1.75,
+          "width": 1.125
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -45,10 +45,16 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.19999999999999998
+          "min_clearance": 0.0
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -108,10 +114,10 @@
       "rule_severitieslegacy_no_courtyard_defined": false,
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.19999999999999998,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.075,
-        "min_hole_clearance": 0.25,
+        "min_hole_clearance": 0.19999999999999998,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
@@ -120,7 +126,7 @@
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.15,
+        "min_track_width": 0.19999999999999998,
         "min_via_annular_width": 0.09999999999999999,
         "min_via_diameter": 0.39999999999999997,
         "solder_mask_to_copper_clearance": 0.0,
@@ -166,8 +172,15 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -401,7 +414,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -415,6 +428,23 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.3,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Unprotected",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -425,11 +455,7 @@
     "netclass_patterns": [
       {
         "netclass": "Default",
-        "pattern": "+15V"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "-15V"
+        "pattern": "*15V"
       },
       {
         "netclass": "Default",
@@ -2550,6 +2576,30 @@
       {
         "netclass": "Default",
         "pattern": "Net-(J9-Padc9)"
+      },
+      {
+        "netclass": "Unprotected",
+        "pattern": "*Vin"
+      },
+      {
+        "netclass": "Unprotected",
+        "pattern": "Net-(D9-A)"
+      },
+      {
+        "netclass": "Unprotected",
+        "pattern": "Net-(Q6-S)"
+      },
+      {
+        "netclass": "Unprotected",
+        "pattern": "Net-(D9-K)"
+      },
+      {
+        "netclass": "Unprotected",
+        "pattern": "Net-(C1-Pad1)"
+      },
+      {
+        "netclass": "Unprotected",
+        "pattern": "Net-(C4-Pad2)"
       }
     ]
   },
@@ -2587,7 +2637,7 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "Pcbnew",
+    "net_format_name": "KiCad",
     "ngspice": {
       "fix_include_paths": true,
       "fix_passive_vals": false,
@@ -2614,24 +2664,24 @@
       ""
     ],
     [
-      "00000000-0000-0000-0000-00005fd0564d",
-      "Fischer HB ME"
-    ],
-    [
-      "00000000-0000-0000-0000-00005fda93f3",
-      "Distributed Capacitance"
-    ],
-    [
-      "00000000-0000-0000-0000-00005fd30cfa",
-      "Fischer"
-    ],
-    [
       "f9160387-088e-4a7b-8d58-b2647e07444c",
       "Input protection (postive)"
     ],
     [
       "1acfc0a8-4adc-455e-9f2b-420811df0901",
       "Input protection (negative)"
+    ],
+    [
+      "00000000-0000-0000-0000-00005fd0564d",
+      "Fischer HB ME"
+    ],
+    [
+      "00000000-0000-0000-0000-00005fd30cfa",
+      "Fischer TFP"
+    ],
+    [
+      "00000000-0000-0000-0000-00005fda93f3",
+      "Distributed Capacitance"
     ]
   ],
   "text_variables": {}

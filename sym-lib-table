@@ -1,4 +1,7 @@
 (sym_lib_table
-  (lib (name Connector_DIN)(type Legacy)(uri ${KIPRJMOD}/libraries/Connector_DIN.lib)(options "")(descr ""))
-  (lib (name Custom_logos)(type Legacy)(uri ${KIPRJMOD}/libraries/Custom_logos.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "Connector_DIN")(type "KiCad")(uri "${KIPRJMOD}/libraries/Connector_DIN.kicad_sym")(options "")(descr ""))
+  (lib (name "Custom_logos")(type "KiCad")(uri "${KIPRJMOD}/libraries/Custom_logos.kicad_sym")(options "")(descr ""))
+  (lib (name "Texas Instruments")(type "KiCad")(uri "${KIPRJMOD}/libraries/Texas Instruments.kicad_sym")(options "")(descr ""))
+  (lib (name "ADI")(type "KiCad")(uri "${KIPRJMOD}/libraries/ADI.kicad_sym")(options "")(descr ""))
 )

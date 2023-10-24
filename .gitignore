@@ -28,3 +28,9 @@ footprints_project_specific.3dshapes
 
 # KiCAD 7 Files #
 \#auto_saved_files#
+
+# Automatically generated files #
+#################################
+gerber/*
+/*.csv
+/*.xlsx
