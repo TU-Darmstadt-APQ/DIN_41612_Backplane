@@ -17,3 +17,8 @@ updates:
     commit-message:
       # Prefix all commit messages with "[docker] "
       prefix: "[docker] "
+
+  - package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule:
+      interval: "daily"
