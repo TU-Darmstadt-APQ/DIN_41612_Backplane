@@ -1,0 +1,38 @@
+name: "Compile LaTex datasheet"
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches:
+      - "*"
+    paths:
+      - 'datasheet/*'
+      - '.github/workflows/datasheet.yml'
+    # Ignore the push event when creating tags
+    tags-ignore:
+      - '[0-9]+.[0-9]+.[0-9]+'
+  release:
+    types:
+      - published
+
+jobs:
+  compile_latex:
+    name: Compile datasheet using LaTex
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download repository
+        uses: actions/checkout@v4
+
+      - name: Compile datasheet
+        uses: PatrickBaus/latex-action@0.0.13
+        with:
+          root_file: datasheet_backplane.tex
+          working_directory: /datasheet
+
+      - name: Retrieve results
+        uses: actions/upload-artifact@v3
+        with:
+          name: datasheet
+          path: datasheet_backplane.pdf

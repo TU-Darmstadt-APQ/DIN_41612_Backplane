@@ -12,7 +12,7 @@ on:
       - 'footprints.pretty/*'
       - 'footprints_project_specific.pretty/*'
       - 'libraries/*'
-      - '.github/workflows/manufacturing_files.yml'
+      - '.github/workflows/ci.yml'
       - 'config.kibot.yml'
     # Ignore the push event when creating tags
     tags-ignore:
