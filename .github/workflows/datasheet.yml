@@ -1,6 +1,19 @@
 name: 'Build Datasheet'
 on:
   push:
+    branches:
+      - "*"
+    paths:
+      - 'datasheet/*'
+      - '.github/workflows/datasheet.yml'
+    # Ignore the push event when creating tags
+    tags-ignore:
+      - '[0-9]+.[0-9]+.[0-9]+'
+  release:
+    types:
+      - published
+  release:
+    types: [published]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,13 +29,14 @@ jobs:
         run:  tectonic datasheet/datasheet.tex
 
       - name: Upload pdf as artifact
+        if: github.event.action != 'published'
         uses: actions/upload-artifact@v3
         with:
           name: datasheet
           path: datasheet/datasheet.pdf
 
       - name: Upload pdf files
-        if: github.event_name == 'release'
+        if: github.event.action == 'published'
         run: gh release upload ${{  github.ref_name }} datasheet/datasheet.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
