@@ -27,16 +27,16 @@ jobs:
       - name: Run Tectonic
         run:  tectonic datasheet/datasheet.tex
 
-      - name: Upload pdf as artifact
+      - name: Upload PDF as artifact
         if: github.event.action != 'published'
         uses: actions/upload-artifact@v3
         with:
           name: datasheet
           path: datasheet/datasheet.pdf
 
-      - name: Upload pdf files
+      - name: Append PDF as an asset
         if: github.event.action == 'published'
-        run: gh release upload ${{  github.ref_name }} datasheet/datasheet.pdf
+        run: gh release upload ${{  github.ref_name }} datasheet/datasheet.pdf#'Device datasheet'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
