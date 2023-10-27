@@ -194,10 +194,10 @@ jobs:
         shell: bash
 
       - name: Append Gerber files as asset
-        if: github.event.action == 'published'
+        if: github.event.action == 'published' && matrix.variant == 'default'
         run: |
           mv "./manufacturing_files/gerber_files/gerbers.zip" gerber_files_${{needs.tests.outputs.revision}}_all.zip
-          gh release upload ${{ github.ref_name }} gerber_files_${{needs.tests.outputs.revision}}_all.zip#"Pick & Gerber files for all variants (zip)" --repo ${{ github.repository }}
+          gh release upload ${{ github.ref_name }} gerber_files_${{needs.tests.outputs.revision}}_all.zip#"Gerber files for all variants (zip)" --repo ${{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
