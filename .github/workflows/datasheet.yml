@@ -2,9 +2,9 @@ name: 'Build datasheet'
 on:
   push:
     branches:
-      - "*"
+      - "**"
     paths:
-      - 'datasheet/*'
+      - 'datasheet/**'
       - '.github/workflows/datasheet.yml'
     # Ignore the push event when creating tags
     tags-ignore:

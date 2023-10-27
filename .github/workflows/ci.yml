@@ -5,10 +5,10 @@ name: "KiCad CI/CD to create manufacturing files"
 on:
   push:
     branches:
-      - "*"
+      - "**"
     paths:
-      - '*.kicad_sch'
-      - '*.kicad_pcb'
+      - '**.kicad_sch'
+      - '**.kicad_pcb'
       - 'footprints.pretty/*'
       - 'footprints_project_specific.pretty/*'
       - 'libraries/*'
