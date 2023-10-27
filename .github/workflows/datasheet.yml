@@ -11,11 +11,19 @@ jobs:
       - uses: wtfjoke/setup-tectonic@v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          tectonic-version: 0.14.1
+
       - name: Run Tectonic
         run:  tectonic datasheet/datasheet.tex
-      - name: Upload pdf
+
+      - name: Upload pdf as artifact
         uses: actions/upload-artifact@v3
         with:
-          name: main
+          name: datasheet
           path: datasheet/datasheet.pdf
+
+      - name: Upload pdf files
+        if: github.event_name == 'release'
+        run: gh release upload ${{  github.ref_name }} datasheet/datasheet.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
