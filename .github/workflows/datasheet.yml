@@ -36,7 +36,7 @@ jobs:
 
       - name: Append PDF as an asset
         if: github.event.action == 'published'
-        run: gh release upload ${{  github.ref_name }} datasheet/datasheet.pdf#'Device datasheet'
+        run: gh release upload ${{ github.ref_name }} datasheet/datasheet.pdf#"Device datasheet (pdf)"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
