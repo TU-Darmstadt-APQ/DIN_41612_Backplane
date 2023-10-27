@@ -170,7 +170,7 @@ jobs:
         if: github.event.action == 'published'
         run: |
           mv "./manufacturing_files/bom/bom_(${{ matrix.variant }}).zip" bom_${{ matrix.variant }}.zip
-          gh release upload ${{ github.ref_name }} bom_${{ matrix.variant }}.zip#"Bill of materials for ${{ matrix.variant }} variant (zip)"
+          gh release upload ${{ github.ref_name }} bom_${{ matrix.variant }}.zip#"Bill of materials for ${{ matrix.variant }} variant (zip)" --repo {{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
@@ -179,7 +179,7 @@ jobs:
         if: github.event.action == 'published'
         run: |
           mv "./manufacturing_files/schematics/schematics_(${{ matrix.variant }}).pdf" schematics_${{needs.tests.outputs.revision}}_${{ matrix.variant }}.pdf
-          gh release upload ${{ github.ref_name }} schematics_${{needs.tests.outputs.revision}}_${{ matrix.variant }}.pdf#"Schematics for ${{ matrix.variant }} variant (pdf)"
+          gh release upload ${{ github.ref_name }} schematics_${{needs.tests.outputs.revision}}_${{ matrix.variant }}.pdf#"Schematics for ${{ matrix.variant }} variant (pdf)" --repo {{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
@@ -188,7 +188,7 @@ jobs:
         if: github.event.action == 'published'
         run: |
           mv "./manufacturing_files/gerber_files/pos_(${{ matrix.variant }}).zip" position_files_${{needs.tests.outputs.revision}}_${{ matrix.variant }}.zip
-          gh release upload ${{ github.ref_name }} position_files_${{needs.tests.outputs.revision}}_${{ matrix.variant }}.zip#"Pick & Place position files for ${{ matrix.variant }} variant (zip)"
+          gh release upload ${{ github.ref_name }} position_files_${{needs.tests.outputs.revision}}_${{ matrix.variant }}.zip#"Pick & Place position files for ${{ matrix.variant }} variant (zip)" --repo {{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
@@ -197,7 +197,7 @@ jobs:
         if: github.event.action == 'published'
         run: |
           mv "./manufacturing_files/gerber_files/gerbers.zip" gerber_files_${{needs.tests.outputs.revision}}_all.zip
-          gh release upload ${{ github.ref_name }} gerber_files_${{needs.tests.outputs.revision}}_all.zip#"Pick & Gerber files for all variants (zip)"
+          gh release upload ${{ github.ref_name }} gerber_files_${{needs.tests.outputs.revision}}_all.zip#"Pick & Gerber files for all variants (zip)" --repo {{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
