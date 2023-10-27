@@ -1,3 +1,5 @@
+[![Build manufacturing files](https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane/actions/workflows/ci.yml/badge.svg)](https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane/actions/workflows/ci.yml)
+[![Build datasheet](https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane/actions/workflows/datasheet.yml/badge.svg)](https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane/actions/workflows/datasheet.yml)
 19" DIN 41612 Backplane
 ===================
 This repository contains the schematics for our laser rack backplanes. It allows to connect up to 6 DIN 41612 C64AC connectors at different positions.

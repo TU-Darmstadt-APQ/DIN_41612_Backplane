@@ -1,4 +1,4 @@
-name: 'Build Datasheet'
+name: 'Build datasheet'
 on:
   push:
     branches:
