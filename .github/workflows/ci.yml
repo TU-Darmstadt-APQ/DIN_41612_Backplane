@@ -151,7 +151,7 @@ jobs:
   release:
     name: 'Upload manufacturing files to release'
     runs-on: ubuntu-latest
-    needs: [tests, fabrication_output]
+    needs: fabrication_output
     if: github.event.action == 'published'
     strategy:
       matrix:
