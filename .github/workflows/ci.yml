@@ -16,7 +16,7 @@ on:
       - 'config.kibot.yaml'
     # Ignore the push event when creating tags
     tags-ignore:
-      - '[0-9]+.[0-9]+.[0-9]+'
+      - 'v?[0-9]+.[0-9]+.[0-9]+'
   release:
     types:
       - published
