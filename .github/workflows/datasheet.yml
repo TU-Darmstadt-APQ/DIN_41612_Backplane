@@ -1,38 +1,21 @@
-name: "Compile LaTex datasheet"
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+name: 'Build Datasheet'
 on:
   push:
-    branches:
-      - "*"
-    paths:
-      - 'datasheet/*'
-      - '.github/workflows/datasheet.yml'
-    # Ignore the push event when creating tags
-    tags-ignore:
-      - '[0-9]+.[0-9]+.[0-9]+'
-  release:
-    types:
-      - published
-
 jobs:
-  compile_latex:
-    name: Compile datasheet using LaTex
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Download repository
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Compile datasheet
-        uses: PatrickBaus/latex-action@0.0.14
+      - uses: wtfjoke/setup-tectonic@v3
         with:
-          root_file: datasheet_backplane.tex
-          working_directory: /datasheet
-
-      - name: Retrieve results
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          tectonic-version: 0.14.1
+      - name: Run Tectonic
+        run:  tectonic datasheet/datasheet.tex
+      - name: Upload pdf
         uses: actions/upload-artifact@v3
         with:
-          name: datasheet
-          path: datasheet_backplane.pdf
+          name: main
+          path: datasheet.pdf
