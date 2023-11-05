@@ -39,12 +39,16 @@ jobs:
           echo "value=$(echo ${{ env.TEX_FILE }} | sed -e 's/\.[^.]*$//')" >> $GITHUB_OUTPUT
         shell: bash
 
-      - name: Rename PDF
+      - name: Set PDF output filename
         id: output-filename
         run: |
-          filename=${{ steps.filename.outputs.value }}.pdf
-          echo "value=$filename" >> $GITHUB_OUTPUT
-          mv "${{ steps.filename.outputs.value }}.pdf" "$filename"
+          echo "value=${{ steps.filename.outputs.value }}.pdf" >> $GITHUB_OUTPUT
+        shell: bash
+
+      - name: Rename PDF
+        if: steps.filename.outputs.value != steps.output-filename.outputs.value
+        run: |
+          mv "${{ steps.filename.outputs.value }}.pdf" "${{ steps.output-filename.outputs.value }}"
         shell: bash
 
       - name: Upload PDF as artifact
