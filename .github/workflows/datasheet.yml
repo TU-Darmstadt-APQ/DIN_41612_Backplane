@@ -13,6 +13,10 @@ on:
     types:
       - published
 
+env:
+  TEX_FILE: datasheet/datasheet.tex
+  FILE_DESCRIPTION: Device datasheet (pdf)
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,23 +24,39 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - uses: wtfjoke/setup-tectonic@v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run Tectonic
-        run:  tectonic datasheet/datasheet.tex
+        run:  tectonic ${{ env.TEX_FILE }}
+        shell: bash
+
+      - name: Strip file extension
+        id: filename
+        run: |
+          echo "value=$(echo ${{ env.TEX_FILE }} | sed -e 's/\.[^.]*$//')" >> $GITHUB_OUTPUT
+        shell: bash
+
+      - name: Rename PDF
+        id: output-filename
+        run: |
+          filename=${{ steps.filename.outputs.value }}.pdf
+          echo "value=$filename" >> $GITHUB_OUTPUT
+          mv "${{ steps.filename.outputs.value }}.pdf" "$filename"
+        shell: bash
 
       - name: Upload PDF as artifact
         if: github.event.action != 'published'
         uses: actions/upload-artifact@v3
         with:
           name: datasheet
-          path: datasheet/datasheet.pdf
+          path: ${{ steps.output-filename.outputs.value }}
 
       - name: Append PDF as an asset
         if: github.event.action == 'published'
-        run: gh release upload ${{ github.ref_name }} datasheet/datasheet.pdf#"Device datasheet (pdf)" --repo ${{ github.repository }}
+        run: gh release upload ${{ github.ref_name }} ${{ steps.output-filename.outputs.value }}#"${{ env.FILE_DESCRIPTION }}" --repo ${{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
