@@ -46,7 +46,7 @@ jobs:
         shell: bash
 
       - name: Rename PDF
-        if: steps.filename.outputs.value != steps.output-filename.outputs.value
+        if: ${{ steps.filename.outputs.value }}.pdf != steps.output-filename.outputs.value
         run: |
           mv "${{ steps.filename.outputs.value }}.pdf" "${{ steps.output-filename.outputs.value }}"
         shell: bash
