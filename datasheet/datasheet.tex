@@ -35,7 +35,6 @@
 \item{Supports both open-frame and Fischer HB ME cases}
 \item{Overvoltage and undervoltage protection}
 \item{Reverse polarity protection up to \qty{\pm 48}{\V}}
-\item{Reverse current protection}
 \item{Soft-start and current limit with foldback}
 \item{Transient voltage protection}
 \item{\qtyrange{9}{24}{\V} @ \qty{12}{\A}}
@@ -130,16 +129,16 @@ All specifications are for $\qty{-20}{\celsius} \leq T_A \leq \qty{60}{\celsius}
             & $V_\text{ee}$ & (Note 1) & \num{-11} & & \num{-24} & \unit{V} \\
             & $I$ & (Note 1) & & & \num{\pm 12} & \unit{\A} \\
             \hline
-            \multirow{2}{*}{Undervoltage threshold} & & (Note 2) & \num{6.3} & \num{6.5} & \num{6.7} & \unit{\V} \\
-             & & (Note 1, 2) & \num{-9.8} & \num{-10.1} & \num{-10.8} & \unit{\V} \\
-            \multirow{2}{*}{Undervoltage hysteresis} & &(Note 2) & \num{6.0} & \num{6.1} & \num{6.3} & \unit{\V} \\
-             & & (Note 1, 2)  & \num{-8.8} & \num{-9.1} & \num{-9.2} & \unit{\V} \\
-            \multirow{2}{*}{Overvoltage threshold} & & (Note 2) & \num{25.3} & \num{26.1}& \num{26.9} & \unit{\V} \\
-             & & (Note 1, 2) & \num{-25.8} & \num{-26.6}& \num{-27.4} & \unit{\V} \\
-            \multirow{2}{*}{Overvoltage hysteresis} & & (Note 2) & \num{24.7} & \num{25.3}& \num{26.0} & \unit{\V} \\
-             & & (Note 1, 2) & \num{-24.3} & \num{-25.6}& \num{-26.9} & \unit{\V} \\
+            \multirow{2}{*}{Undervoltage threshold} & & (Note 2), $V_\text{cc} > V_\text{th}$, falling & \num{6.3} & \num{6.5} & \num{6.7} & \unit{\V} \\
+             & & (Note 1, 2) & \num{-9.4} & \num{-10} & \num{-10.6} & \unit{\V} \\
+            \multirow{2}{*}{Undervoltage hysteresis} & &(Note 2), $V_\text{cc} < V_\text{th}$, rising & \num{6.7} & \num{6.9} & \num{7.1} & \unit{\V} \\
+             & & (Note 1, 2)  & \num{-8.8} & \num{-9.0} & \num{-9.3} & \unit{\V} \\
+            \multirow{2}{*}{Overvoltage threshold} & & (Note 2), $V_\text{cc} < V_\text{th}$, rising & \num{25.6} & \num{26.1}& \num{26.7} & \unit{\V} \\
+             & & (Note 1, 2) & \num{-25.9} & \num{-26.6}& \num{-27.3} & \unit{\V} \\
+            \multirow{2}{*}{Overvoltage hysteresis} & & (Note 2), $V_\text{cc} > V_\text{th}$, falling & \num{24.7} & \num{25.3}& \num{25.9} & \unit{\V} \\
+             & & (Note 1, 2) & \num{-24.7} & \num{-25.6}& \num{-26.5} & \unit{\V} \\
             \multirow{2}{*}{Overcurrent threshold} & & (Note 2) & \num{15} & \num{16.7} & \num{18} & \unit{\A} \\
-             & & (Note 1, 2) & \num{-14.7} & \num{-16.7} & \num{-18.7} & \unit{\A} \\
+             & & (Note 1, 2) & \num{-14.6} & \num{-16.7} & \num{-18.7} & \unit{\A} \\
             \hline
             \multirow{2}{*}{Current per pin} & & $T_\text{A} = \qty{20}{\celsius}$ & & & 1.5 & \unit{\A}\\
             & & $T_\text{A} = \qty{60}{\celsius}$ & & & 1.1 & \unit{\A}\\
@@ -174,5 +173,3 @@ All specifications are for $\qty{-20}{\celsius} \leq T_A \leq \qty{60}{\celsius}
 \textbf{Note:} Stresses beyond those listed under \textit{Absolute Maximum Ratings} may cause permanent damage to the device. These are stress ratings only, which do not imply functional operation of the device at these or any other conditions beyond those indicated under \textit{Operating conditions}. Exposure to absolute-maximum-rated conditions for extended periods may affect device reliability.
 
 \end{document}
-
-
