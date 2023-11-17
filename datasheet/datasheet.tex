@@ -13,9 +13,13 @@
 \usepackage[english]{babel}
 \usepackage[iso,english]{isodate}
 \usepackage{siunitx}
+\usepackage{standalone}
 
 \usepackage{graphicx}
 \usepackage{qrcode}
+\usepackage{tikz}
+\usetikzlibrary{patterns,arrows}
+\definecolor{silver}{rgb}{0.75, 0.75, 0.75}
 
 % These define global texts that are used in headers and titles.
 \title{APQ Eurocard backplane}
@@ -84,7 +88,7 @@ The backplane is powered by a commercially available bench power supply to meet 
         \thickhline
         Version& Date& Comment\\
         \hline
-        1.0.0 &2023-10-19 & Initial release.\\
+        1.0.0 &2023-10-19 & Initial release. Compatible to hardware revision 2.0.0.\\
         \thickhline
     \end{tabularx}
 \end{table}
@@ -171,5 +175,15 @@ All specifications are for $\qty{-20}{\celsius} \leq T_A \leq \qty{60}{\celsius}
 \end{table}
 
 \textbf{Note:} Stresses beyond those listed under \textit{Absolute Maximum Ratings} may cause permanent damage to the device. These are stress ratings only, which do not imply functional operation of the device at these or any other conditions beyond those indicated under \textit{Operating conditions}. Exposure to absolute-maximum-rated conditions for extended periods may affect device reliability.
+
+\section{Accessories}
+Every backplane is comes with a \qty{2}{\m} power supply cable as shown in figure \ref{fig:power_cable}. The cable has a green Phoenix Contact \texttt{\small{MSTB 2,5 HC/ 3-ST-5,08}} connector on one end and five \qty{4}{\mm} connectors on the other end. These connectors can be used to connect the backplane to a standard two channel DC power supply. To simplify the connection, the common connector is spliced so that two channels of the power supply can be easily chained together to create the dual positive/negative supply required for the backplane.
+
+\begin{figure}[ht]
+    \caption{Power cable supplied with the Eurocard backplane.}
+    \label{fig:power_cable}
+    \centering
+    \include{power_cable}
+\end{figure}
 
 \end{document}
