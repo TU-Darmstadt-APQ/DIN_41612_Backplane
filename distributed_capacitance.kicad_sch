@@ -479,6 +479,10 @@
     (uuid ff009bdb-080a-49d4-96ba-f70a1ab80943)
   )
 
+  (text "TODO: Add caps for the neg supply" (at 66.04 149.86 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 589afda6-58e2-4e9b-87c2-7f2553dadf2f)
+  )
   (text "The capacitors are rated at 7 kh at 105 °C.\nTest temperature at full currrent with\nthermocam to estimate lifetime!"
     (at 130.81 100.33 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
