@@ -686,16 +686,16 @@
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "D_Constant_Current_0_1"
-        (circle (center 0 0) (radius 1.27)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
         (polyline
           (pts
             (xy -1.27 1.27)
             (xy -1.27 -1.27)
           )
           (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type default))
           (fill (type none))
         )
       )
@@ -1323,10 +1323,10 @@
     )
     (pin "1" (uuid e571228a-574f-4ac5-ada4-10e244578b01))
     (pin "2" (uuid 7463fbe7-cc6b-4c9f-ab45-bbe5e233a766))
-    (pin "3" (uuid 7505374c-2cfb-4b4d-8e87-b0f7f9092176))
-    (pin "3" (uuid 7505374c-2cfb-4b4d-8e87-b0f7f9092176))
-    (pin "5" (uuid ce55f39b-8cdf-462a-9b11-2ce6a0eb316a))
+    (pin "3" (uuid 7505374c-2cfb-4b4d-8e87-b0f7f9092177))
+    (pin "3" (uuid 7505374c-2cfb-4b4d-8e87-b0f7f9092177))
     (pin "4" (uuid ce235ef2-5203-46e5-b51a-c9a77631b880))
+    (pin "5" (uuid ce55f39b-8cdf-462a-9b11-2ce6a0eb316a))
     (instances
       (project "main"
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/1acfc0a8-4adc-455e-9f2b-420811df0901"
@@ -2480,10 +2480,10 @@
     )
     (pin "1" (uuid 944e2e7c-32e9-4ec9-b029-064565e80d2c))
     (pin "2" (uuid 9e85b8e7-b220-44ff-9c58-533d9552a833))
-    (pin "3" (uuid a5c1941c-f27a-4731-84f4-0d93089204f7))
-    (pin "3" (uuid a5c1941c-f27a-4731-84f4-0d93089204f7))
-    (pin "5" (uuid 6e95d24d-5f83-44ef-a134-b4eebcd37380))
+    (pin "3" (uuid a5c1941c-f27a-4731-84f4-0d93089204f8))
+    (pin "3" (uuid a5c1941c-f27a-4731-84f4-0d93089204f8))
     (pin "4" (uuid b1b188cc-39c7-4ef9-aeaf-4dee064d6742))
+    (pin "5" (uuid 6e95d24d-5f83-44ef-a134-b4eebcd37380))
     (instances
       (project "main"
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/1acfc0a8-4adc-455e-9f2b-420811df0901"
