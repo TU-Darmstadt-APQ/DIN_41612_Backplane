@@ -1384,7 +1384,7 @@
           (reference "C24") (unit 1)
         )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/1acfc0a8-4adc-455e-9f2b-420811df0901"
-          (reference "C21") (unit 1)
+          (reference "C30") (unit 1)
         )
       )
     )
@@ -1607,7 +1607,7 @@
   (symbol (lib_id "Device:FerriteBead") (at 76.2 106.68 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4ff07e9f-f361-4e76-a83b-8664eadb1572)
-    (property "Reference" "FB1" (at 76.1492 99.06 90)
+    (property "Reference" "FB2" (at 76.1492 99.06 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "5" (at 76.1492 101.6 90)
@@ -1639,7 +1639,7 @@
     (instances
       (project "main"
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/1acfc0a8-4adc-455e-9f2b-420811df0901"
-          (reference "FB1") (unit 1)
+          (reference "FB2") (unit 1)
         )
       )
     )
@@ -1859,7 +1859,7 @@
           (reference "R2") (unit 1)
         )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/1acfc0a8-4adc-455e-9f2b-420811df0901"
-          (reference "R3") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
     )
@@ -1909,7 +1909,7 @@
           (reference "C26") (unit 1)
         )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/1acfc0a8-4adc-455e-9f2b-420811df0901"
-          (reference "C22") (unit 1)
+          (reference "C31") (unit 1)
         )
       )
       (project "main"
@@ -2045,7 +2045,7 @@
           (reference "C22") (unit 1)
         )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/1acfc0a8-4adc-455e-9f2b-420811df0901"
-          (reference "C4") (unit 1)
+          (reference "C18") (unit 1)
         )
       )
       (project "main"
@@ -2188,7 +2188,7 @@
   (symbol (lib_id "Device:C") (at 180.34 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ccf67272-cb49-4661-94a7-0f92982b24d7)
-    (property "Reference" "C20" (at 184.15 81.28 0)
+    (property "Reference" "C29" (at 184.15 81.28 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 184.15 83.82 0)
@@ -2220,7 +2220,7 @@
     (instances
       (project "main"
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/1acfc0a8-4adc-455e-9f2b-420811df0901"
-          (reference "C20") (unit 1)
+          (reference "C29") (unit 1)
         )
       )
     )
