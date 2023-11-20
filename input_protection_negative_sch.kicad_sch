@@ -1216,11 +1216,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ae38e894-d104-4e5a-beb0-251ed7f352b3)
   )
-  (text "TODO: Change footprint to Package_SO:SOIC-14W_7.5x9mm_P1.27mm"
-    (at 195.58 133.35 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid b9e69d04-d01b-43fc-82c5-7e746aa59c33)
-  )
   (text "Maximum Output capacitance = 2.2 mF + input cap. of devices\n≈ 4 mF\nThis takes about 17 ms to start @ 16 A. Or 22 ms @ 5A\n-> 33 ms TIMER cap (330 nF)"
     (at 200.66 33.02 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -1693,7 +1688,7 @@
     (property "Value" "LM5067" (at 213.36 59.69 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" (at 213.36 86.36 0)
+    (property "Footprint" "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" (at 213.36 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm5067.pdf" (at 208.28 59.69 0)
