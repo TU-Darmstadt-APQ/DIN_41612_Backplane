@@ -1301,6 +1301,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5d81e5b1-9317-4889-a44c-ba8059c5382c)
   )
+  (text "Thermal image taken:\n- 24V @ 12 A\n- 18V @ 14 A\n- 20V @ 16 A"
+    (at 24.13 180.34 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 65b61eea-fd28-41b9-bf79-70c9a27b62b4)
+  )
   (text "Height: 1.6 mm" (at 46.99 85.09 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 79dcfecc-2295-4fec-a92b-ed0acf732c07)
