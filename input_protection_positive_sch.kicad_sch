@@ -1374,6 +1374,15 @@
     (uuid f87ee7ec-914f-46e7-afc3-80aa8a233dd9)
   )
 
+  (label "Q1-D" (at 82.55 64.77 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 89d4024c-8b19-4917-bb29-4fdd5270154d)
+  )
+  (label "Q1-S" (at 100.33 64.77 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid fd0bca05-d2a6-46bc-be03-4049c1e046a0)
+  )
+
   (hierarchical_label "Vout" (shape passive) (at 271.78 64.77 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 3b701c4a-147c-494c-8e0d-c33d616c70f0)
