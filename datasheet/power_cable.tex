@@ -59,11 +59,11 @@
     }
 
     \def\MSTB#1{%
-    % #1 Number of pins
+        % #1 Number of pins
         \begin{scope}[xscale=0.5, yscale=0.5]
             % pin lables
             \foreach \i in {1,..., #1} {
-                \node[rotate=90] at (-2.57+5.08*\i,-22) {\the\numexpr#1-\i+1};
+                \node[rotate=90] at (-2.57+5.08*\i,-22) {\i};
             }
             \draw[fill=green!60!black]%
                 (0,0) -- ++(0,-18.32) -- ++(5.11+5.08*\the\numexpr#1-1,0) -- ++(0,18.3) -- cycle%

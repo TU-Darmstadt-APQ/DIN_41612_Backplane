@@ -15,12 +15,12 @@ preflight:
       regex: 'Footprint J\d+'
     - filter: 'The DIN 41612 silkscreen of different configuration overlap'
       error: silk_overlap
-    - filter: 'Net-ties produce clearance errors'
-      error: clearance
-      regex: 'Polygon|NT\d+'
     - filter: 'The 4mm Jack does not yet have a footprint'
       error: lib_footprint_issues
       regex: 'Schuetzinger_4mm_Jack'
+    - filter: 'Those vias are used to give multimeter probes more grip'
+      error: via_dangling
+      regex: 'Via \[-15V\]|Via \[Net-\(Q3-D\)\]|Via \[Net-\(JP3-A\)\]'
 
 variants:
   - name: 'default'
