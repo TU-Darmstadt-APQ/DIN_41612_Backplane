@@ -1271,8 +1271,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d167ea92-4e38-4ef6-acca-ee581bf6c572)
   )
-  (text "-11 to -24 V input\nUV: 6.5 V (6.34 V - 6.69 V)\nOV: 26 V (28.85 V - 27.34 V)\nThere is a hysteresis on both UV and OV (~1 V)"
-    (at 36.83 118.11 0)
+  (text "-11 to -24 V input\nUV: 6.5 V (6.34 V - 6.69 V)\nOV: 26 V (28.85 V - 27.34 V)\nThere is a hysteresis on both UV and OV (~1 V)\n±48 V abs. max. due to the\nTVS diode breaking down"
+    (at 36.83 120.65 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d68a1273-efdd-482b-b6eb-ca945db34e5c)
   )
@@ -1324,7 +1324,7 @@
     (pin "1" (uuid e571228a-574f-4ac5-ada4-10e244578b01))
     (pin "2" (uuid 7463fbe7-cc6b-4c9f-ab45-bbe5e233a766))
     (pin "3" (uuid 7505374c-2cfb-4b4d-8e87-b0f7f9092177))
-    (pin "3" (uuid 7505374c-2cfb-4b4d-8e87-b0f7f9092177))
+    (pin "3" (uuid 7505374c-2cfb-4b4d-8e87-b0f7f9092178))
     (pin "4" (uuid ce235ef2-5203-46e5-b51a-c9a77631b880))
     (pin "5" (uuid ce55f39b-8cdf-462a-9b11-2ce6a0eb316a))
     (instances
@@ -2481,7 +2481,7 @@
     (pin "1" (uuid 944e2e7c-32e9-4ec9-b029-064565e80d2c))
     (pin "2" (uuid 9e85b8e7-b220-44ff-9c58-533d9552a833))
     (pin "3" (uuid a5c1941c-f27a-4731-84f4-0d93089204f8))
-    (pin "3" (uuid a5c1941c-f27a-4731-84f4-0d93089204f8))
+    (pin "3" (uuid a5c1941c-f27a-4731-84f4-0d93089204f9))
     (pin "4" (uuid b1b188cc-39c7-4ef9-aeaf-4dee064d6742))
     (pin "5" (uuid 6e95d24d-5f83-44ef-a134-b4eebcd37380))
     (instances

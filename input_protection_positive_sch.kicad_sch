@@ -1072,7 +1072,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2bb6ac60-8a5b-4b7c-b8d2-2a68f82e1323)
   )
-  (text "8 to 24 V input\nUV: 6.5 V (6.34 V to 6.69 V)\nOV: 26 V (25.36 V to 26.88 V)"
+  (text "8 to 24 V input\nUV: 6.5 V (6.34 V to 6.69 V)\nOV: 26 V (25.36 V to 26.88 V)\n±48 V abs. max. due to the\nTVS diode breaking down"
     (at 20.32 60.96 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5d81e5b1-9317-4889-a44c-ba8059c5382c)
