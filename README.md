@@ -99,7 +99,7 @@ See the following repositories for more information as these are part of the [de
 ## Versioning
 I use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags](../../tags) available for this repository.
 
-- MAJOR versions in this context mean a breaking change to the external interface of the hardware like different connector or functions.
+- MAJOR versions in this context mean a breaking change to the external interface of the hardware like different connectors or functions.
 - MINOR versions contain changes to the hardware that only affect the inner workings of the circuit, but otherwise the performance is unaffected.
 - PATCH versions do not affect the schematics or invalidate older bill of materials. These changes may include updated components (to replace obsolete parts for example), an updated silkscreen, or fixed typos.
 
