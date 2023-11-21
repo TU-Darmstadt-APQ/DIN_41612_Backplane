@@ -2108,7 +2108,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a08c3c91-58df-49ba-9312-da4668bc93f1)
   )
-  (text "TODO:\n- Add serial number\n- Add test points\n- Add thermal jumpers\n- Test hot into short"
+  (text "TODO:\n- Add serial number\n- Add test points\n- Test hot into short"
     (at 109.22 57.15 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d57c15b4-150c-41c0-849a-c261b3ed48ba)
