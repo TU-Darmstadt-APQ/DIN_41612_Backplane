@@ -7,7 +7,7 @@ authors:
     family-names: Baus
     email: patrick.baus@physik.tu-darmstadt.de
     name-particle: Patrick
-    affiliation: TU Darmstadt
+    affiliation: TU Darmstadt, Institut für Angewandte Physik
     orcid: "https://orcid.org/0000-0002-0318-5245"
 repository-code: "https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane"
 license: CERN-OHL-W-2.0
@@ -19,5 +19,6 @@ preferred-citation:
       family-names: Baus
       email: patrick.baus@physik.tu-darmstadt.de
       name-particle: Patrick
-      affiliation: TU Darmstadt
+      affiliation: TU Darmstadt, Institut für Angewandte Physik
       orcid: "https://orcid.org/0000-0002-0318-5245"
+      url: "https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane"
