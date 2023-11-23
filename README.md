@@ -1,7 +1,7 @@
 [![Build manufacturing files](https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane/actions/workflows/ci.yml/badge.svg)](https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane/actions/workflows/ci.yml)
 [![Build datasheet](https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane/actions/workflows/datasheet.yml/badge.svg)](https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane/actions/workflows/datasheet.yml)
-# 19" IEC 60603-2 (DIN 41612) Backplane
-A 19" backplane designed according to [IEEE 1101.1-1998](https://ieeexplore.ieee.org/document/741932) to mount the laser electronics in the [Eurocard](https://en.wikipedia.org/wiki/Eurocard_(printed_circuit_board)) form factor developed by APQ. See [below](#introduction) for a list of compatible devices. The design files can be found on the [releases](../../releases) page.
+# 19″ IEC 60603-2 (DIN 41612) Backplane
+A 19″ backplane designed according to [IEEE 1101.1-1998](https://ieeexplore.ieee.org/document/741932) to mount the laser electronics in the [Eurocard](https://en.wikipedia.org/wiki/Eurocard_(printed_circuit_board)) form factor developed by APQ. See [below](#introduction) for a list of compatible devices. The design files can be found on the [releases](../../releases) page.
 
 ## Contents
 - [Introduction](#introduction)
@@ -13,7 +13,7 @@ A 19" backplane designed according to [IEEE 1101.1-1998](https://ieeexplore.ieee
 - [License](#license)
 
 ## Introduction
-This repository contains the schematics for the APQ 19" sub-rack backplanes to mount electronics within a 19" rack. The backplanes use several [IEC 60603-2](https://en.wikipedia.org/wiki/DIN_41612) C64AC connectors that can be configured to mount several different types of [Eurocard](https://en.wikipedia.org/wiki/Eurocard_(printed_circuit_board)) devices used by this group.  There is space for up to 6 connectors mountable in different positions to accommodate both the [Fischer Elektronik HB ME 14](https://www.fischerelektronik.com/web_fischer/en_GB/cases/N06.011/19%22%20insert%20modules/$catalogue/fischerData/PR/HBME14_/index.xhtml) and the [Fischer Elektronik TFP 3 14](https://www.fischerelektronik.com/web_fischer/en_GB/cases/N06.05/Part%20front%20panels/$catalogue/fischerData/PR/TFP14/index.xhtml) system.
+This repository contains the schematics for the APQ 19″ sub-rack backplanes to mount electronics within a 19″ rack. The backplanes use several [IEC 60603-2](https://en.wikipedia.org/wiki/DIN_41612) C64AC connectors that can be configured to mount several different types of [Eurocard](https://en.wikipedia.org/wiki/Eurocard_(printed_circuit_board)) devices used by this group.  There is space for up to 6 connectors mountable in different positions to accommodate both the [Fischer Elektronik HB ME 14](https://www.fischerelektronik.com/web_fischer/en_GB/cases/N06.011/19%22%20insert%20modules/$catalogue/fischerData/PR/HBME14_/index.xhtml) and the [Fischer Elektronik TFP 3 14](https://www.fischerelektronik.com/web_fischer/en_GB/cases/N06.05/Part%20front%20panels/$catalogue/fischerData/PR/TFP14/index.xhtml) system.
 
 Compatible devices can be found here:
 - [Digital Controller for Laser Frequency Stabilization](https://github.com/TU-Darmstadt-APQ/RedPitaya-Lockbox) (RedPitaya-Lockbox)
@@ -28,10 +28,10 @@ Compatible devices can be found here:
 There is a datasheet available that lists the most important electrical and mechanical specifications. The latest version can be found [here](../../releases/latest/download/datasheet.pdf). Older version can be found attached to the respective [release](../../releases).
 
 ## Installation
-The backplane is designed to be mounted inside a 19" sub-rack chassis.  The most common systems used in this group are the [Schroff EuropacPRO](https://schroff.nvent.com/de-de/products/enc24563-142) and the [Fischer Elektronik BGT 384 180](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.1/19%22%20subracks/$catalogue/fischerData/PR/BGT384_180/search.xhtml). Additionally a power supply must be provided. Typically, a rack mountable DC power supply like an [HP 6632B](https://www.keysight.com/us/en/product/6632B/100-watt-system-power-supply-20v-5a.html) is used for each rail.
+The backplane is designed to be mounted inside a 19″ sub-rack chassis.  The most common systems used in this group are the [Schroff EuropacPRO](https://schroff.nvent.com/de-de/products/enc24563-142) and the [Fischer Elektronik BGT 384 180](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.1/19%22%20subracks/$catalogue/fischerData/PR/BGT384_180/search.xhtml). Additionally a power supply must be provided. Typically, a rack mountable DC power supply like an [HP 6632B](https://www.keysight.com/us/en/product/6632B/100-watt-system-power-supply-20v-5a.html) is used for each rail.
 
 ### Required components
-- [3 U](https://en.wikipedia.org/wiki/Rack_unit) 19" sub-rack chassis
+- [3 U](https://en.wikipedia.org/wiki/Rack_unit) 19″ sub-rack chassis
   - [Schroff EuropacPRO](https://schroff.nvent.com/de-de/products/enc24563-142) or
   - [Fischer Elektronik BGT 384 180](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.1/19%22%20subracks/$catalogue/fischerData/PR/BGT384_180/search.xhtml)) and the following accessories:
     - 2x [Fischer Elektronik IST 84](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.2/Accessories%20for%2019%22%20subracks/$catalogue/fischerData/PG/BGT_IST84/search.xhtml) 3 mm isolation strips. These go between the chassis and the backplane.
