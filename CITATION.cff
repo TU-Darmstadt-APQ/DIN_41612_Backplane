@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this design, please cite it as below."
+authors:
+- family-names: "Baus"
+  given-names: "Patrick"
+  orcid: "https://orcid.org/0000-0002-0318-5245"
+title: "APQ 19" IEC 60603-2 (DIN 41612) Backplane"
+url: "https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane"
+preferred-citation:
+  type: manual
