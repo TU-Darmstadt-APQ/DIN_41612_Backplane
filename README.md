@@ -104,5 +104,5 @@ I use [SemVer](http://semver.org/) for versioning. For the versions available, s
 - PATCH versions do not affect the schematics or invalidate older bill of materials. These changes may include updated components (to replace obsolete parts for example), an updated silkscreen, or fixed typos.
 
 ## License
-This work is released under the Cern OHL v.1.2
-See www.ohwr.org/licenses/cern-ohl/v1.2 or the included LICENSE file for more information.
+This work is released under the CERN-OHL-W
+See [https://ohwr.org/cern_ohl_w_v2.pdf](https://ohwr.org/cern_ohl_w_v2.pdf) or the included LICENSE file for more information.

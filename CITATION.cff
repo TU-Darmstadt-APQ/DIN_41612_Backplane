@@ -1,10 +1,13 @@
 cff-version: 1.2.0
-message: "If you use this design, please cite it as below."
+title: 'APQ 19" IEC 60603-2 (DIN 41612) Backplane'
+message: 'If you use this design, please cite it as below.'
+type: software
 authors:
-- family-names: "Baus"
-  given-names: "Patrick"
-  orcid: "https://orcid.org/0000-0002-0318-5245"
-title: "APQ 19" IEC 60603-2 (DIN 41612) Backplane"
-url: "https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane"
-preferred-citation:
-  type: manual
+  - given-names: Patrick
+    family-names: Baus
+    email: patrick.baus@physik.tu-darmstadt.de
+    name-particle: Patrick
+    affiliation: TU Darmstadt
+    orcid: 'https://orcid.org/0000-0002-0318-5245'
+repository-code: 'https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane'
+license: CERN-OHL-W-2.0
