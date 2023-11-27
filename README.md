@@ -31,18 +31,18 @@ There is a datasheet available that lists the most important electrical and mech
 The backplane is designed to be mounted inside a 19″ sub-rack chassis.  The most common systems used in this group are the [Schroff EuropacPRO](https://schroff.nvent.com/de-de/products/enc24563-142) and the [Fischer Elektronik BGT 384 180](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.1/19%22%20subracks/$catalogue/fischerData/PR/BGT384_180/search.xhtml). Additionally a power supply must be provided. Typically, a rack mountable DC power supply like an [HP 6632B](https://www.keysight.com/us/en/product/6632B/100-watt-system-power-supply-20v-5a.html) is used for each rail.
 
 ### Required components
-- [3 U](https://en.wikipedia.org/wiki/Rack_unit) 19″ sub-rack chassis
+- [ ] [3 U](https://en.wikipedia.org/wiki/Rack_unit) 19″ sub-rack chassis
   - [Schroff EuropacPRO](https://schroff.nvent.com/de-de/products/enc24563-142) or
   - [Fischer Elektronik BGT 384 180](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.1/19%22%20subracks/$catalogue/fischerData/PR/BGT384_180/search.xhtml)) and the following accessories:
     - 2x [Fischer Elektronik IST 84](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.2/Accessories%20for%2019%22%20subracks/$catalogue/fischerData/PG/BGT_IST84/search.xhtml) 3 mm isolation strips. These go between the chassis and the backplane.
     - 1x [Fischer Elektronik BGT 384/2](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N06.09/Mounting%20accessories/$catalogue/fischerData/PR/BGT384_2M2.5/index.xhtml) M2.5 mounting strips. A package contains for strips, two for each side of the chassis.
     - 6x [Fischer Elektronik FSC 160](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.2/Accessories%20for%2019%22%20subracks/$catalogue/fischerData/PR/FSC160/index.xhtml), one for each module installed.
     - 1x optional [Fischer Elektronik AB211](https://www.fischerelektronik.com/web_fischer/en_GB/cases/N05.2/Accessories%20for%2019%22%20subracks/$catalogue/fischerData/PR/AB211/search.xhtml) cover panel. These can be made of mild steel on special order for additional magnetic shielding compared to aluminium.
-- Power supply with ±15 V outputs
-- Power cable with a  [MSTB 2,5 HC/ 3-ST-5,08](https://www.phoenixcontact.com/en-us/products/pcb-plug-mstb-25-hc-3-st-508-1911978). See [power cable assembly](#power-cable-assembly) below for details.
-- Up to 6  female straight [IEC 60603-2](https://en.wikipedia.org/wiki/DIN_41612)  C64AC connectors depending on the number of devices to be installed. Use class 1 or 2 connectors for better longevity. Examples are [ept 304-40054-01](https://www.ept-connectors.com/index.php?304-40054-01_en) via [Farnell](https://de.farnell.com/ept/304-40054-01/steckv-din-41612-buchsenleist/dp/2758954?st=304-40054-01) or [Harting 09032646824](https://b2b.harting.com/ebusiness/de/DIN-Signal-C064FS-29C1-2/09032646824) via [RS](https://de.rs-online.com/web/p/din-41612-steckverbinder/9235025) or [Mouser](https://eu.mouser.com/ProductDetail/HARTING/09032646824?qs=gIpPgrDBK%2FjuvkAKv%252BIFBQ%3D%3D).
- - 10x M2.5x10 mm screws
- - 10x M2.5 DIN 125-A/ISO 7089 plain washers
+- [ ] Power supply with ±15 V outputs
+- [ ] Power cable with a  [MSTB 2,5 HC/ 3-ST-5,08](https://www.phoenixcontact.com/en-us/products/pcb-plug-mstb-25-hc-3-st-508-1911978). See [power cable assembly](#power-cable-assembly) below for details.
+- [ ] Up to 6  female straight [IEC 60603-2](https://en.wikipedia.org/wiki/DIN_41612)  C64AC connectors depending on the number of devices to be installed. Use class 1 or 2 connectors for better longevity. Examples are [ept 304-40054-01](https://www.ept-connectors.com/index.php?304-40054-01_en) via [Farnell](https://de.farnell.com/ept/304-40054-01/steckv-din-41612-buchsenleist/dp/2758954?st=304-40054-01) or [Harting 09032646824](https://b2b.harting.com/ebusiness/de/DIN-Signal-C064FS-29C1-2/09032646824) via [RS](https://de.rs-online.com/web/p/din-41612-steckverbinder/9235025) or [Mouser](https://eu.mouser.com/ProductDetail/HARTING/09032646824?qs=gIpPgrDBK%2FjuvkAKv%252BIFBQ%3D%3D).
+ - [ ] 10x M2.5x10 mm screws
+ - [ ] 10x M2.5 DIN 125-A/ISO 7089 plain washers
 
 ### Installation steps
 - Start by soldering in the [IEC 60603-2](https://en.wikipedia.org/wiki/DIN_41612) connectors. There are markings on the PCB that show where to install these depending on the type of device enclosure used. Devices built around [Fischer Elektronik HB ME 14](https://www.fischerelektronik.com/web_fischer/en_GB/cases/N06.011/19%22%20insert%20modules/$catalogue/fischerData/PR/HBME14_/index.xhtml) and [Fischer Elektronik TFP 3 14](https://www.fischerelektronik.com/web_fischer/en_GB/cases/N06.05/Part%20front%20panels/$catalogue/fischerData/PR/TFP14/index.xhtml) are supported.
@@ -61,23 +61,28 @@ To assemble a cable proceed as follows to produce a cable with the dimensions sh
 #### Backplane connector
 The backplane side, using a [MSTB 2,5 HC/ 3-ST-5,08](https://www.phoenixcontact.com/en-us/products/pcb-plug-mstb-25-hc-3-st-508-1911978) connector, is straightforward:
 
-- Cut back the outer sheath by 5 cm and remove it
-- Trim the braid to about 1 cm and fold it back
-- Put shrink tube over the braid and the cut
-- Strip the three wires using a wire stripper
-- Insert the wire labled number 1 into position 3, the green/yellow wire then goes into the center, and the black wire labled number 2 must be inserted into position 1
+1. Cut back the outer sheath by 5 cm and remove it
+2. Trim the braid to about 1 cm and fold it back
+3. Put shrink tube over the braid and the cut
+4. Strip the three wires using a wire stripper
+5. Insert the wire labeled number 1 into position 1, the green/yellow wire then goes into the center, and the black wire labeled number 2 must be inserted into position 3
 
 #### Power supply connectors
-The 4 mm connectors for the DC power supply require more work because the common conductor needs to be spliced:
+The 4 mm connectors for the DC power supply require more work because the common conductor needs to be spliced. The desired end result is:
 
-- Cut back the outer sheath by 15 cm and remove it
-- Trim the center green/yellow conductor to about 2 cm
-- Solder two 13 cm  2.5 mm² wires to it and place black shrink tube over the solder joint.
-- Trim the braid to about 2 cm and solder a 20 cm yellow 1.5 mm² wire to it.
-- Place shrink tube over the yellow solder joint
-- Place black shrink tube over the black splice of the common rail
-- Place shrink tube over all wires
-- Strip all cables using a wire stripper and solder in the 4 mm connectors
+- 4 connectors (red, blue, 2x black) on 15 cm wires
+- 1 yellow connector on a 20 cm wire
+
+T o get there do the following:
+
+1. Cut back the outer sheath by 15 cm and remove it
+2. Trim the braid to about 2 cm and solder an 18 cm yellow 1.5 mm² wire to it.
+3. Place shrink tube over the yellow solder joint
+4. Trim the center green/yellow conductor to about 2 cm
+5. Solder two 13 cm  2.5 mm² wires to it and place black shrink tube over the solder joint.
+6. Place black shrink tube over the black splice of the common rail
+7. Place shrink tube over all wires
+8. Strip all cables using a wire stripper and solder in the 4 mm connectors
 
 ## Design Files
 The design files can be found on the [releases](../../releases) page and include the following resources:
