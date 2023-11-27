@@ -73,7 +73,7 @@ The 4 mm connectors for the DC power supply require more work because the common
 - 4 connectors (red, blue, 2x black) on 15 cm wires
 - 1 yellow connector on a 20 cm wire
 
-T o get there do the following:
+T o get there, do the following:
 
 1. Cut back the outer sheath by 15 cm and remove it
 2. Trim the braid to about 2 cm and solder an 18 cm yellow 1.5 mm² wire to it.
