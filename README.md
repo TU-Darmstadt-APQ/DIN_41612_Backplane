@@ -85,7 +85,8 @@ T o get there, do the following:
 8. Strip all cables using a wire stripper and solder in the 4 mm connectors
 
 ## Design Files
-The design files can be found on the [releases](../../releases) page and include the following resources:
+### For production
+The design files required for the PCB production and assembly can be found on the [releases](../../releases) page and include the following resources:
 
 - Schematics as a PDF
 - Gerber files
@@ -93,6 +94,30 @@ The design files can be found on the [releases](../../releases) page and include
 - Bill of materials as a CSV file and also as an interactive HTML version
 
 The latest revision of those files can be found [here](../../releases/latest).
+
+#### Variants
+Several variants of the design files are provided for the user. There is a so-called *default* variant, a *HBME* variant and a *TFP* variant.
+
+##### Default variant
+The default variant does not contain any [IEC 60603-2](https://en.wikipedia.org/wiki/DIN_41612) connectors. This is the version sent to the boardhouse for assembly and it is the version that is found on new backplanes. It allows the user to customize the backplane for several different devices. Depending on the type of device used in the subrack, the [IEC 60603-2](https://en.wikipedia.org/wiki/DIN_41612) connector must be installed in a different position. This is discussed below.
+
+##### HBME variant
+This variant is an example where all slots are equipped with [IEC 60603-2](https://en.wikipedia.org/wiki/DIN_41612) connectors for devices that come in the [Fischer Elektronik HB ME 14](https://www.fischerelektronik.com/web_fischer/en_GB/cases/N06.011/19%22%20insert%20modules/$catalogue/fischerData/PR/HBME14_/index.xhtml) form factor. These are fully shielded devices that come with an enclosure.
+
+> [!NOTE]
+> It is possible to mix the HBME and the TFP variant depending on the desired setup.
+
+##### TFP variant
+The TFP variant is used for devices utilizing the [Fischer Elektronik TFP 3 14](https://www.fischerelektronik.com/web_fischer/en_GB/cases/N06.05/Part%20front%20panels/$catalogue/fischerData/PR/TFP14/index.xhtml) assembly. These device have an open frame. The design files show an example configuration that uses [IEC 60603-2](https://en.wikipedia.org/wiki/DIN_41612) connectors considering a subrack full of [TFP](https://www.fischerelektronik.com/web_fischer/en_GB/cases/N06.05/Part%20front%20panels/$catalogue/fischerData/PR/TFP14/index.xhtml) devices.
+
+> [!NOTE]
+> It is possible to mix the HBME and the TFP variant depending on the desired setup.
+
+### For editing
+To work on the [KiCad](https://www.kicad.org/) design files, a number of external libraries are needed. Those libraries show up as empty folders in the zip file, because they are not included in the release, but must be downloaded separately from the links given [below](#related-repositories). This can be avoided by checking out the whole repository using git. This way the libraries will be downloaded as well. Use the following command to clone the git repository along with the submodules  using the `--recurse-submodules` flag.
+```
+git clone --recurse-submodules https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane.git
+```
 
 ## Related Repositories
 See the following repositories for more information as these are part of the [design files](#design Files).
