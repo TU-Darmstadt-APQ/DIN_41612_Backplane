@@ -10,6 +10,9 @@ preflight:
     - filter: 'Added custom 3D models to DIN 41612'
       error: lib_footprint_mismatch
       regex: 'Footprint J\d+'
+    - filter: 'Waiting for https://gitlab.com/kicad/libraries/kicad-packages3D/-/issues/762'
+      error: lib_footprint_mismatch
+      regex: 'SOIC-14W_7.5x9mm_P1.27mm'
     - filter: 'The DIN 41612 connectors of different configuration overlap'
       error: courtyards_overlap
       regex: 'Footprint J\d+'
