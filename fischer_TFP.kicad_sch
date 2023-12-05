@@ -6,8 +6,8 @@
 
   (title_block
     (title "Fischer TFP DIN connector configuration")
-    (date "2023-11-21")
-    (rev "2.1.0")
+    (date "2023-12-05")
+    (rev "2.1.1")
     (comment 1 "Copyright (©) 2023, Patrick Baus <patrick.baus@physik.tu-darmstadt.de>")
     (comment 2 "Licensed under CERN OHL-W v2.0")
   )
