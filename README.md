@@ -41,7 +41,7 @@ The backplane is designed to be mounted inside a 19″ sub-rack chassis.  The mo
 - [ ] Power supply with ±15 V outputs
 - [ ] Power cable with a  [MSTB 2,5 HC/ 3-ST-5,08](https://www.phoenixcontact.com/en-us/products/pcb-plug-mstb-25-hc-3-st-508-1911978). See [power cable assembly](#power-cable-assembly) below for details.
 - [ ] Up to 6  female straight [IEC 60603-2](https://en.wikipedia.org/wiki/DIN_41612)  C64AC connectors depending on the number of devices to be installed. Use class 1 or 2 connectors for better longevity. Examples are [ept 304-40054-01](https://www.ept-connectors.com/index.php?304-40054-01_en) via [Farnell](https://de.farnell.com/ept/304-40054-01/steckv-din-41612-buchsenleist/dp/2758954?st=304-40054-01) or [Harting 09032646824](https://b2b.harting.com/ebusiness/de/DIN-Signal-C064FS-29C1-2/09032646824) via [RS](https://de.rs-online.com/web/p/din-41612-steckverbinder/9235025) or [Mouser](https://eu.mouser.com/ProductDetail/HARTING/09032646824?qs=gIpPgrDBK%2FjuvkAKv%252BIFBQ%3D%3D).
- - [ ] 10x M2.5x10 mm screws
+ - [ ] 10x M2.5x10 ISO 14583 TX8 screws
  - [ ] 10x M2.5 DIN 125-A/ISO 7089 plain washers
 
 ### Installation steps
