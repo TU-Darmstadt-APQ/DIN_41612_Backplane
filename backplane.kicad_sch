@@ -5314,7 +5314,7 @@
   (symbol (lib_id "Connector:Conn_01x03_Socket") (at 38.1 102.87 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e30cbe10-8e26-431d-a851-c9f39475bbca)
-    (property "Reference" "J14" (at 36.83 104.14 0)
+    (property "Reference" "J13" (at 36.83 104.14 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x03_Socket" (at 36.83 101.6 0)
@@ -5344,7 +5344,7 @@
     (instances
       (project "backplane"
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f"
-          (reference "J14") (unit 1)
+          (reference "J13") (unit 1)
         )
       )
     )
@@ -5389,7 +5389,7 @@
   (symbol (lib_id "Connector:Conn_01x01_Pin") (at 64.77 163.83 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f66b561c-1ac8-4b12-9e4a-42488912dcda)
-    (property "Reference" "J13" (at 64.135 158.75 0)
+    (property "Reference" "J14" (at 64.135 158.75 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x01_Pin" (at 64.135 161.29 0)
@@ -5417,7 +5417,7 @@
     (instances
       (project "backplane"
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f"
-          (reference "J13") (unit 1)
+          (reference "J14") (unit 1)
         )
       )
     )
