@@ -5298,6 +5298,9 @@
     (property "PN" "" (at 113.03 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "DNP" "1" (at 113.03 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 20a2577f-69ee-40c1-bdb6-096cd96a603b))
     (instances
       (project "backplane"
@@ -5433,6 +5436,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "PN" "" (at 104.14 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "DNP" "1" (at 104.14 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 371b3f85-e971-44e7-b994-97b6bf76cb56))

@@ -1948,6 +1948,9 @@
     (property "Datasheet" "~" (at 81.28 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "DNP" "1" (at 76.2 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 575fc8ee-68c3-4e9a-a9a1-9a042971e1d7))
     (instances
       (project "backplane"
