@@ -7,20 +7,18 @@ preflight:
   update_xml: true
   ignore_unconnected: false
   filters:
-    - filter: 'Added custom 3D models to DIN 41612'
+    - filter: 'Added custom 3D models to DIN 41612 and 4mm Jack'
       error: lib_footprint_mismatch
       regex: 'Footprint J\d+'
     - filter: 'Waiting for https://gitlab.com/kicad/libraries/kicad-packages3D/-/issues/762'
       error: lib_footprint_mismatch
       regex: 'SOIC-14W_7.5x9mm_P1.27mm'
-    - filter: 'The DIN 41612 connectors of different configuration overlap'
-      error: courtyards_overlap
+    - filter: 'The DIN 41612 connectors of different variants overlap'
+      error: 'courtyards_overlap'
       regex: 'Footprint J\d+'
-    - filter: 'The DIN 41612 silkscreen of different configuration overlap'
-      error: silk_overlap
-    - filter: 'The 4mm Jack does not yet have a footprint'
-      error: lib_footprint_issues
-      regex: 'Schuetzinger_4mm_Jack'
+    - filter: 'The DIN 41612 connectors of different variants overlap'
+      error: 'silk_overlap'
+      regex: 'Line on F.Silkscreen'
     - filter: 'Those vias are used to give multimeter probes more grip'
       error: via_dangling
       regex: 'Via \[-15V\]|Via \[Net-\(Q3-D\)\]|Via \[Net-\(JP3-A\)\]'
