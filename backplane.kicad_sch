@@ -1185,10 +1185,10 @@
       )
     )
     (symbol "Custom_logos:SYM_RoHS" (in_bom no) (on_board no)
-      (property "Reference" "#SYM" (at 0 6.35 0)
+      (property "Reference" "#SYM" (at 0 3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "SYM_RoHS" (at 0 -6.35 0)
+      (property "Value" "SYM_RoHS" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Footprint" "" (at 7.62 0 0)
@@ -1203,7 +1203,10 @@
       (property "ki_keywords" "symbol logo rohs" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "RoHS logo" (at 0 0 0)
+      (property "ki_description" "RoHS (Restriction of Hazardous Substances Directive) logo" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "RoHS?Logo*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "SYM_RoHS_1_0"
@@ -2166,7 +2169,7 @@
   (symbol (lib_id "Graphic:Logo_Open_Hardware_Small") (at 274.32 173.99 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dda7885)
-    (property "Reference" "LOGO3" (at 274.32 167.005 0)
+    (property "Reference" "LOGO2" (at 274.32 167.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "Logo_Open_Hardware_Small" (at 274.32 179.705 0)
@@ -2190,7 +2193,7 @@
     (instances
       (project "backplane"
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f"
-          (reference "LOGO3") (unit 1)
+          (reference "LOGO2") (unit 1)
         )
       )
     )
@@ -5297,9 +5300,9 @@
   )
 
   (symbol (lib_id "Custom_logos:SYM_RoHS") (at 223.52 170.18 0) (unit 1)
-    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eaaaa013-f54c-4f41-a609-f4bf83dfe9b8)
-    (property "Reference" "LOGO2" (at 229.87 163.195 0)
+    (property "Reference" "LOGO3" (at 229.87 163.195 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "Logo_RoHS" (at 229.87 176.53 0)
@@ -5326,7 +5329,7 @@
     (instances
       (project "backplane"
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f"
-          (reference "LOGO2") (unit 1)
+          (reference "LOGO3") (unit 1)
         )
       )
     )
