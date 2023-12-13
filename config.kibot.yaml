@@ -1,6 +1,18 @@
 kibot:
   version: 1
 
+globals:
+  # Filters for KiBot warnings
+  filters:
+    - filter: Ignore missing KiCad config, not in docker images
+      number: 8
+    - filter: Ignore missing KiCad 3D models, not in docker images
+      number: 10
+    - filter: Ignore missing KiCad config from KiAuto, not in docker images
+      number: 58
+      regex: kicad_common.json
+  # This will undo the `set_text_variables` when we run it locally
+  restore_project: true
 preflight:
   run_drc: true
   run_erc: true
