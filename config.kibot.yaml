@@ -13,6 +13,7 @@ globals:
       regex: kicad_common.json
   # This will undo the `set_text_variables` when we run it locally
   restore_project: true
+
 preflight:
   run_drc: true
   run_erc: true
@@ -26,10 +27,10 @@ preflight:
       error: lib_footprint_mismatch
       regex: 'SOIC-14W_7.5x9mm_P1.27mm'
     - filter: 'The DIN 41612 connectors of different variants overlap'
-      error: 'courtyards_overlap'
+      error: courtyards_overlap
       regex: 'Footprint J\d+'
     - filter: 'The DIN 41612 connectors of different variants overlap'
-      error: 'silk_overlap'
+      error: silk_overlap
       regex: 'Line on F.Silkscreen'
     - filter: 'Those vias are used to give multimeter probes more grip'
       error: via_dangling
