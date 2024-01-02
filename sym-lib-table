@@ -4,5 +4,4 @@
   (lib (name "Texas Instruments")(type "KiCad")(uri "${KIPRJMOD}/libraries/Texas Instruments.kicad_sym")(options "")(descr ""))
   (lib (name "ADI")(type "KiCad")(uri "${KIPRJMOD}/libraries/ADI.kicad_sym")(options "")(descr ""))
   (lib (name "Vishay")(type "KiCad")(uri "${KIPRJMOD}/libraries/Vishay.kicad_sym")(options "")(descr ""))
-  (lib (name "constant_current_diode")(type "KiCad")(uri "${KIPRJMOD}/libraries/constant_current_diode.kicad_sym")(options "")(descr ""))
 )

@@ -4746,7 +4746,7 @@
   (symbol (lib_id "power:+15V") (at 100.33 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060028846)
-    (property "Reference" "#PWR?" (at 100.33 87.63 0)
+    (property "Reference" "#PWR0188" (at 100.33 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+15V" (at 101.6 78.74 0)
@@ -4761,12 +4761,6 @@
     (pin "1" (uuid f5c2a595-fdcb-4323-9a0d-7b9855db7523))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f"
           (reference "#PWR0188") (unit 1)
         )
@@ -4802,7 +4796,7 @@
   (symbol (lib_id "power:-15V") (at 105.41 120.65 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006002d52b)
-    (property "Reference" "#PWR?" (at 105.41 123.19 0)
+    (property "Reference" "#PWR0189" (at 105.41 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-15V" (at 104.14 125.73 0)
@@ -4817,12 +4811,6 @@
     (pin "1" (uuid adac687c-8b40-4511-849e-9b04d9586330))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f"
           (reference "#PWR0189") (unit 1)
         )
@@ -4858,7 +4846,7 @@
   (symbol (lib_id "power:GND") (at 67.31 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060031ab1)
-    (property "Reference" "#PWR?" (at 67.31 110.49 0)
+    (property "Reference" "#PWR0190" (at 67.31 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 68.58 109.22 0)
@@ -4873,12 +4861,6 @@
     (pin "1" (uuid 9b553d87-3bf8-4a1a-a107-8c54c496486f))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f"
           (reference "#PWR0190") (unit 1)
         )

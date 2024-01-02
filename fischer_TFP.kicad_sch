@@ -1984,7 +1984,7 @@
   (symbol (lib_id "Connector:DIN41612_02x32_AC") (at 160.02 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 02f79abf-26f0-44f9-9fa6-1d777e0ec86d)
-    (property "Reference" "J4" (at 161.29 52.07 0)
+    (property "Reference" "J8" (at 161.29 52.07 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DIN41612_02x32_AC" (at 161.29 54.61 0)
@@ -2092,9 +2092,6 @@
     (pin "c9" (uuid 31998584-ffae-4e23-81b7-1c4db3192a37))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "J4") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "J8") (unit 1)
         )
@@ -2105,7 +2102,7 @@
   (symbol (lib_id "power:GND") (at 116.84 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 155922fc-5bc1-4853-ac63-269a174b0b02)
-    (property "Reference" "#PWR02" (at 116.84 109.22 0)
+    (property "Reference" "#PWR049" (at 116.84 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 118.11 107.95 0)
@@ -2120,9 +2117,6 @@
     (pin "1" (uuid fc8dccbf-9973-4e56-b313-4443c3edcd29))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR02") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR049") (unit 1)
         )
@@ -2133,7 +2127,7 @@
   (symbol (lib_id "power:GND") (at 176.53 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1ae17c94-3b01-42cb-8f40-1477e093df38)
-    (property "Reference" "#PWR08" (at 176.53 109.22 0)
+    (property "Reference" "#PWR055" (at 176.53 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.8 107.95 0)
@@ -2148,9 +2142,6 @@
     (pin "1" (uuid 0b33c27b-1604-433a-be3c-8c36b211b3f5))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR08") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR055") (unit 1)
         )
@@ -2161,7 +2152,7 @@
   (symbol (lib_id "Connector:DIN41612_02x32_AC") (at 69.85 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1d6888d1-06c3-49f8-96a5-d04ded2eb1cd)
-    (property "Reference" "J1" (at 71.12 52.07 0)
+    (property "Reference" "J2" (at 71.12 52.07 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DIN41612_02x32_AC" (at 71.12 54.61 0)
@@ -2269,9 +2260,6 @@
     (pin "c9" (uuid e051e009-6ae4-4341-b982-2cbab5be26f2))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "J1") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "J2") (unit 1)
         )
@@ -2282,7 +2270,7 @@
   (symbol (lib_id "power:+15V") (at 176.53 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 21828452-3697-47c2-88f0-c4bbfc719e44)
-    (property "Reference" "#PWR07" (at 176.53 59.69 0)
+    (property "Reference" "#PWR054" (at 176.53 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+15V" (at 177.8 50.8 0)
@@ -2297,9 +2285,6 @@
     (pin "1" (uuid fe7d16cc-06c7-48b5-8f2f-9e78c22472f3))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR07") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR054") (unit 1)
         )
@@ -2310,7 +2295,7 @@
   (symbol (lib_id "power:GND") (at 207.01 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2314296a-f997-45df-addc-ea6ed465ee8b)
-    (property "Reference" "#PWR011" (at 207.01 109.22 0)
+    (property "Reference" "#PWR058" (at 207.01 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 208.28 107.95 0)
@@ -2325,9 +2310,6 @@
     (pin "1" (uuid 023dbecb-3f91-4a3e-b2ce-2084077c3722))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR011") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR058") (unit 1)
         )
@@ -2338,7 +2320,7 @@
   (symbol (lib_id "power:-15V") (at 86.36 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 27be5348-e61a-48f7-ad74-298964664cf7)
-    (property "Reference" "#PWR047" (at 86.36 128.27 0)
+    (property "Reference" "#PWR018" (at 86.36 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-15V" (at 87.63 125.73 0)
@@ -2353,9 +2335,6 @@
     (pin "1" (uuid 60cef442-5759-4874-b0bf-6fc2aa754b9f))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR047") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR018") (unit 1)
         )
@@ -2366,7 +2345,7 @@
   (symbol (lib_id "Connector:DIN41612_02x32_AC") (at 190.5 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 448a47f6-67fa-45a0-9bdf-d0b3576ef5b1)
-    (property "Reference" "J5" (at 191.77 52.07 0)
+    (property "Reference" "J10" (at 191.77 52.07 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DIN41612_02x32_AC" (at 191.77 54.61 0)
@@ -2474,9 +2453,6 @@
     (pin "c9" (uuid ab8e3426-3b28-4ae6-a655-8f390eb22af3))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "J5") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "J10") (unit 1)
         )
@@ -2487,7 +2463,7 @@
   (symbol (lib_id "power:GND") (at 86.36 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5677f555-dac7-45da-a219-ceb43192c0f5)
-    (property "Reference" "#PWR032" (at 86.36 109.22 0)
+    (property "Reference" "#PWR017" (at 86.36 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 87.63 107.95 0)
@@ -2502,9 +2478,6 @@
     (pin "1" (uuid 6fc83fb3-0c7b-4ae7-b9ed-275a4af3c89a))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR032") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR017") (unit 1)
         )
@@ -2515,7 +2488,7 @@
   (symbol (lib_id "power:-15V") (at 146.05 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5f1a2831-c5b9-492e-b0b9-fc3a8583dd6e)
-    (property "Reference" "#PWR06" (at 146.05 128.27 0)
+    (property "Reference" "#PWR053" (at 146.05 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-15V" (at 147.32 125.73 0)
@@ -2530,9 +2503,6 @@
     (pin "1" (uuid aae0d38e-a386-44fe-bf6c-74bcdd06e898))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR06") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR053") (unit 1)
         )
@@ -2543,7 +2513,7 @@
   (symbol (lib_id "power:-15V") (at 207.01 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5f2d3c4a-bdf8-4288-8dbd-d48889cd7b88)
-    (property "Reference" "#PWR012" (at 207.01 128.27 0)
+    (property "Reference" "#PWR059" (at 207.01 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-15V" (at 208.28 125.73 0)
@@ -2558,9 +2528,6 @@
     (pin "1" (uuid daf19717-01b8-40b0-b9c9-76980b67dee1))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR012") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR059") (unit 1)
         )
@@ -2571,7 +2538,7 @@
   (symbol (lib_id "power:+15V") (at 237.49 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 64d002c2-1fe6-439d-94c6-0dee73d52d60)
-    (property "Reference" "#PWR013" (at 237.49 59.69 0)
+    (property "Reference" "#PWR060" (at 237.49 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+15V" (at 238.76 50.8 0)
@@ -2586,9 +2553,6 @@
     (pin "1" (uuid 6101b64d-bf0e-49b4-8118-3b1cd7f262f1))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR013") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR060") (unit 1)
         )
@@ -2599,7 +2563,7 @@
   (symbol (lib_id "Connector:DIN41612_02x32_AC") (at 220.98 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 69ac1ad1-e4f5-4e58-a80a-63ba0366968c)
-    (property "Reference" "J6" (at 222.25 52.07 0)
+    (property "Reference" "J12" (at 222.25 52.07 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DIN41612_02x32_AC" (at 222.25 54.61 0)
@@ -2707,9 +2671,6 @@
     (pin "c9" (uuid c9af6684-d910-4265-8b88-a06e568c8eb9))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "J6") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "J12") (unit 1)
         )
@@ -2720,7 +2681,7 @@
   (symbol (lib_id "power:-15V") (at 176.53 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 851750ec-5045-4213-b713-f35d1df16dc1)
-    (property "Reference" "#PWR09" (at 176.53 128.27 0)
+    (property "Reference" "#PWR056" (at 176.53 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-15V" (at 177.8 125.73 0)
@@ -2735,9 +2696,6 @@
     (pin "1" (uuid c611ca03-87bd-4658-8057-6ec686eb2d59))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR09") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR056") (unit 1)
         )
@@ -2748,7 +2706,7 @@
   (symbol (lib_id "power:-15V") (at 116.84 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a558c2e5-66ae-44dd-8c9c-38b08ae6f787)
-    (property "Reference" "#PWR03" (at 116.84 128.27 0)
+    (property "Reference" "#PWR050" (at 116.84 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-15V" (at 118.11 125.73 0)
@@ -2763,9 +2721,6 @@
     (pin "1" (uuid 4027b52e-e846-4338-a938-887321375c96))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR03") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR050") (unit 1)
         )
@@ -2776,7 +2731,7 @@
   (symbol (lib_id "Connector:DIN41612_02x32_AC") (at 100.33 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b13a2105-cc59-4067-9eea-8bc56291fbce)
-    (property "Reference" "J2" (at 101.6 52.07 0)
+    (property "Reference" "J4" (at 101.6 52.07 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DIN41612_02x32_AC" (at 101.6 54.61 0)
@@ -2884,9 +2839,6 @@
     (pin "c9" (uuid 31a77f5a-f280-484f-9092-9108f3f72f26))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "J2") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "J4") (unit 1)
         )
@@ -2897,7 +2849,7 @@
   (symbol (lib_id "power:+15V") (at 207.01 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b3415256-cd76-4cbd-bf9e-8a42611fd039)
-    (property "Reference" "#PWR010" (at 207.01 59.69 0)
+    (property "Reference" "#PWR057" (at 207.01 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+15V" (at 208.28 50.8 0)
@@ -2912,9 +2864,6 @@
     (pin "1" (uuid 59cb6a54-f204-48af-bc93-890a7fa24e94))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR010") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR057") (unit 1)
         )
@@ -2925,7 +2874,7 @@
   (symbol (lib_id "power:GND") (at 237.49 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bb632ab5-9ac2-461a-94e8-aaeb5082960a)
-    (property "Reference" "#PWR014" (at 237.49 109.22 0)
+    (property "Reference" "#PWR061" (at 237.49 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 238.76 107.95 0)
@@ -2940,9 +2889,6 @@
     (pin "1" (uuid 2a2515b4-d570-4593-8600-e2d94562d040))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR014") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR061") (unit 1)
         )
@@ -2953,7 +2899,7 @@
   (symbol (lib_id "power:+15V") (at 146.05 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c13a007c-1ea6-48a4-88da-736dd6dfcab2)
-    (property "Reference" "#PWR04" (at 146.05 59.69 0)
+    (property "Reference" "#PWR051" (at 146.05 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+15V" (at 147.32 50.8 0)
@@ -2968,9 +2914,6 @@
     (pin "1" (uuid 19080d7a-47b5-40f5-be1b-48eb5c9b85da))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR04") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR051") (unit 1)
         )
@@ -2981,7 +2924,7 @@
   (symbol (lib_id "power:GND") (at 146.05 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d215cd14-2803-4f72-add1-19f0795cd523)
-    (property "Reference" "#PWR05" (at 146.05 109.22 0)
+    (property "Reference" "#PWR052" (at 146.05 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 147.32 107.95 0)
@@ -2996,9 +2939,6 @@
     (pin "1" (uuid 5a426470-a02b-4bab-a249-3135403809b0))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR05") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR052") (unit 1)
         )
@@ -3009,7 +2949,7 @@
   (symbol (lib_id "power:+15V") (at 86.36 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d3c58446-f684-485c-ae52-b21990bc65d0)
-    (property "Reference" "#PWR029" (at 86.36 59.69 0)
+    (property "Reference" "#PWR016" (at 86.36 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+15V" (at 87.63 50.8 0)
@@ -3024,9 +2964,6 @@
     (pin "1" (uuid 15f45b3a-cb1c-4753-84e7-ef2296ab3e01))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR029") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR016") (unit 1)
         )
@@ -3037,7 +2974,7 @@
   (symbol (lib_id "power:-15V") (at 237.49 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid de780c49-ae3e-4cc0-9c45-37c67c85424e)
-    (property "Reference" "#PWR015" (at 237.49 128.27 0)
+    (property "Reference" "#PWR062" (at 237.49 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-15V" (at 238.76 125.73 0)
@@ -3052,9 +2989,6 @@
     (pin "1" (uuid 20a64edf-b6fe-4aca-a5a5-ac845631409e))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR015") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR062") (unit 1)
         )
@@ -3065,7 +2999,7 @@
   (symbol (lib_id "Connector:DIN41612_02x32_AC") (at 129.54 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e0997595-60d4-4e21-b90d-65c36f172941)
-    (property "Reference" "J3" (at 130.81 52.07 0)
+    (property "Reference" "J6" (at 130.81 52.07 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DIN41612_02x32_AC" (at 130.81 54.61 0)
@@ -3173,9 +3107,6 @@
     (pin "c9" (uuid 6f04673b-2de1-4c07-82c2-5431172caf8e))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "J3") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "J6") (unit 1)
         )
@@ -3186,7 +3117,7 @@
   (symbol (lib_id "power:+15V") (at 116.84 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f30568aa-7de4-43c1-af01-8159d892760e)
-    (property "Reference" "#PWR01" (at 116.84 59.69 0)
+    (property "Reference" "#PWR048" (at 116.84 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+15V" (at 118.11 50.8 0)
@@ -3201,9 +3132,6 @@
     (pin "1" (uuid acdb9853-e640-4450-bb80-2ff61f752dee))
     (instances
       (project "backplane"
-        (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd0564d"
-          (reference "#PWR01") (unit 1)
-        )
         (path "/b4ace06a-3ad4-479e-aaa4-d547ecf6903f/00000000-0000-0000-0000-00005fd30cfa"
           (reference "#PWR048") (unit 1)
         )
