@@ -23,9 +23,6 @@ preflight:
     - filter: 'Added custom 3D models to DIN 41612 and 4mm Jack'
       error: lib_footprint_mismatch
       regex: 'Footprint J\d+'
-    - filter: 'Waiting for https://gitlab.com/kicad/libraries/kicad-packages3D/-/issues/762'
-      error: lib_footprint_mismatch
-      regex: 'SOIC-14W_7.5x9mm_P1.27mm'
     - filter: 'The DIN 41612 connectors of different variants overlap'
       error: courtyards_overlap
       regex: 'Footprint J\d+'
@@ -88,11 +85,11 @@ outputs:
       - 'B.Silkscreen'
       - 'F.Mask'
       - 'B.Mask'
+      - 'User.Comments'
+      - 'User.Drawings'
       - 'Edge.Cuts'
       - 'F.Fab'
       - 'B.Fab'
-      - 'User.Comments'
-      - 'User.Drawings'
 
   - name: 'excellon_drill'
     comment: 'Create the Excellon drill files to go with the Gerber files'
@@ -149,7 +146,7 @@ outputs:
     dir: schematics
     options:
       title: "+ (%V variant)"
-      output: '%I%v.%x'
+      output: '%f_%I_%sr%v.%x'
     output_id: 'schematics'  # Used for the %I expansion int the output file name
 
   - name: 'compress_bom'
@@ -171,7 +168,7 @@ outputs:
       files:
         - from_output: gerbers
         - from_output: excellon_drill
-      output: '%I.%x'
+      output: '%I%v.%x'
     output_id: 'gerbers'  # Used for the %I expansion int the output file name
 
   - name: 'compress_position'
