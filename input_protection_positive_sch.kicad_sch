@@ -1255,6 +1255,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5d81e5b1-9317-4889-a44c-ba8059c5382c)
   )
+  (text "Thermal considerations:\nThe weakest link in the chain is the PCB. It must always stay below\nthe glass transition temperature (Tg). Normal FR-4 has a Tg of 130 °C.\nTo leave some headroom, derate that by 20 K. The pad below the\nMOSFET close to the junction temperature at steady state. Therefore,\nthe limit is the PCB not the MOSFET. In order to reach a specification\nof and allowed ambient temperature of 60 °C must never go more than\n50 K above ambient (for Tg 130 boards). This cannot be guaranteed\nduring continuous overload conditions (16 A). So a Tg 150 board is a\nmust."
+    (at 16.51 38.1 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 63e10cdd-7b2c-46a1-adbe-b4841c31dfb6)
+  )
   (text "Thermal image taken (24 °C ambient):\n- 15V @ 16 A (1503)\n- 15V @ 14 A (1512)\n- 15V @ 12 A (1522)\n"
     (at 24.13 180.34 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
