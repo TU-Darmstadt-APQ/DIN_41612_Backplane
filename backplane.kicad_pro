@@ -2583,23 +2583,15 @@
       },
       {
         "netclass": "Unprotected",
-        "pattern": "Net-(D9-A)"
-      },
-      {
-        "netclass": "Unprotected",
-        "pattern": "Net-(Q6-S)"
-      },
-      {
-        "netclass": "Unprotected",
-        "pattern": "Net-(D9-K)"
-      },
-      {
-        "netclass": "Unprotected",
         "pattern": "Net-(C1-Pad1)"
       },
       {
         "netclass": "Unprotected",
-        "pattern": "Net-(C4-Pad2)"
+        "pattern": "*Q*-S*"
+      },
+      {
+        "netclass": "Unprotected",
+        "pattern": "*Q*-D*"
       }
     ]
   },
