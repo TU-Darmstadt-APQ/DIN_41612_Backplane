@@ -1,7 +1,7 @@
 [![Build manufacturing files](https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane/actions/workflows/ci.yml/badge.svg)](https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane/actions/workflows/ci.yml)
 [![Build datasheet](https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane/actions/workflows/datasheet.yml/badge.svg)](https://github.com/TU-Darmstadt-APQ/DIN_41612_Backplane/actions/workflows/datasheet.yml)
 # 19″ IEC 60603-2 (DIN 41612) Backplane
-A 19″ backplane designed according to [IEEE 1101.1-1998](https://ieeexplore.ieee.org/document/741932) to mount the laser electronics in the [Eurocard](https://en.wikipedia.org/wiki/Eurocard_(printed_circuit_board)) form factor developed by APQ. See [below](#introduction) for a list of compatible devices. The design files can be found on the [releases](../../releases) page.
+This repository contains the [KiCad](https://www.kicad.org/) schematics and design files for a 19″ backplane designed according to [IEEE 1101.1-1998](https://ieeexplore.ieee.org/document/741932) to mount the laser electronics in the [Eurocard](https://en.wikipedia.org/wiki/Eurocard_(printed_circuit_board)) form factor developed by APQ. See [below](#introduction) for a list of compatible devices. The design files can be found on the [releases](../../releases) page.
 
 ## Contents
 - [Introduction](#introduction)
