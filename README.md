@@ -32,6 +32,7 @@ The backplane is designed to be mounted inside a 19″ sub-rack chassis.  The mo
 
 ### Required components and tools
 - [ ] Torque screwdriver of size TX8, set to 0.3 Nm
+- [ ] 1.3 mm screwdriver for hexagonal socket screws
 - [ ] [3 U](https://en.wikipedia.org/wiki/Rack_unit) 19″ sub-rack chassis
   - [Schroff EuropacPRO](https://schroff.nvent.com/de-de/products/enc24563-142) or
   - [Fischer Elektronik BGT 384 180](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.1/19%22%20subracks/$catalogue/fischerData/PR/BGT384_180/search.xhtml)) and the following accessories:
