@@ -30,7 +30,8 @@ There is a datasheet available that lists the most important electrical and mech
 ## Installation
 The backplane is designed to be mounted inside a 19″ sub-rack chassis.  The most common systems used in this group are the [Schroff EuropacPRO](https://schroff.nvent.com/de-de/products/enc24563-142) and the [Fischer Elektronik BGT 384 180](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.1/19%22%20subracks/$catalogue/fischerData/PR/BGT384_180/search.xhtml). Additionally a power supply must be provided. Typically, a rack mountable DC power supply like an [HP 6632B](https://www.keysight.com/us/en/product/6632B/100-watt-system-power-supply-20v-5a.html) is used for each rail.
 
-### Required components
+### Required components and tools
+- [ ] Torque screwdriver of size TX8, set to 0.3 Nm
 - [ ] [3 U](https://en.wikipedia.org/wiki/Rack_unit) 19″ sub-rack chassis
   - [Schroff EuropacPRO](https://schroff.nvent.com/de-de/products/enc24563-142) or
   - [Fischer Elektronik BGT 384 180](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.1/19%22%20subracks/$catalogue/fischerData/PR/BGT384_180/search.xhtml)) and the following accessories:
@@ -41,12 +42,16 @@ The backplane is designed to be mounted inside a 19″ sub-rack chassis.  The mo
 - [ ] Power supply with ±15 V outputs
 - [ ] Power cable with a  [MSTB 2,5 HC/ 3-ST-5,08](https://www.phoenixcontact.com/en-us/products/pcb-plug-mstb-25-hc-3-st-508-1911978). See [power cable assembly](#power-cable-assembly) below for details.
 - [ ] Up to 6  female straight [IEC 60603-2](https://en.wikipedia.org/wiki/DIN_41612)  C64AC connectors depending on the number of devices to be installed. Use class 1 or 2 connectors for better longevity. Examples are [ept 304-40054-01](https://www.ept-connectors.com/index.php?304-40054-01_en) via [Farnell](https://de.farnell.com/ept/304-40054-01/steckv-din-41612-buchsenleist/dp/2758954?st=304-40054-01) or [Harting 09032646824](https://b2b.harting.com/ebusiness/de/DIN-Signal-C064FS-29C1-2/09032646824) via [RS](https://de.rs-online.com/web/p/din-41612-steckverbinder/9235025) or [Mouser](https://eu.mouser.com/ProductDetail/HARTING/09032646824?qs=gIpPgrDBK%2FjuvkAKv%252BIFBQ%3D%3D).
+- [ ] 8x M2.5x8 DIN 914 / ISO 4027 set screws to fasten the  [Fischer Elektronik BGT 384/2](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N06.09/Mounting%20accessories/$catalogue/fischerData/PR/BGT384_2M2.5/index.xhtml) mounting strips
  - [ ] 10x M2.5x10 ISO 14583 TX8 screws
- - [ ] 10x M2.5 DIN 125-A/ISO 7089 plain washers
+ - [ ] 10x M2.5 DIN 125-A / ISO 7089 plain washers
 
 ### Installation steps
+> [!IMPORTANT]
+> Use the a torque screwdriver to tighten the screws holding the PCB, otherwise the PCB might flex and damage components.
+
 - Start by soldering in the [IEC 60603-2](https://en.wikipedia.org/wiki/DIN_41612) connectors. There are markings on the PCB that show where to install these depending on the type of device enclosure used. Devices built around [Fischer Elektronik HB ME 14](https://www.fischerelektronik.com/web_fischer/en_GB/cases/N06.011/19%22%20insert%20modules/$catalogue/fischerData/PR/HBME14_/index.xhtml) and [Fischer Elektronik TFP 3 14](https://www.fischerelektronik.com/web_fischer/en_GB/cases/N06.05/Part%20front%20panels/$catalogue/fischerData/PR/TFP14/index.xhtml) are supported.
-- The backplane must be fixed to the subrack assembly by 5 equidistant M2.5x10 mm screws installed in each of the top and bottom row of mounting holes. Do remember to put the [Fischer Elektronik IST 84](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.2/Accessories%20for%2019%22%20subracks/$catalogue/fischerData/PG/BGT_IST84/search.xhtml) 3 mm isolation strips between the backplane and the subrack if using a Fischer rack. Similar strips come with the  [Schroff EuropacPRO](https://schroff.nvent.com/de-de/products/enc24563-142) subracks as well. Otherwise the [Eurocard](https://en.wikipedia.org/wiki/Eurocard_(printed_circuit_board)) modules will not fit.
+- The backplane must be fixed to the subrack assembly by 5 equidistant M2.5x10 mm TX8 screws installed in each of the top and bottom row of mounting holes. Use the torque screwdriver set to 0.3 Nm so fasten the screws. Do not use a higher torque or the PCB might flex and damage the SMD ceramic capacitors. Do also remember to put the [Fischer Elektronik IST 84](https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.2/Accessories%20for%2019%22%20subracks/$catalogue/fischerData/PG/BGT_IST84/search.xhtml) 3 mm isolation strips between the backplane and the subrack if using a Fischer rack. Similar strips come with the  [Schroff EuropacPRO](https://schroff.nvent.com/de-de/products/enc24563-142) subracks as well. Otherwise the [Eurocard](https://en.wikipedia.org/wiki/Eurocard_(printed_circuit_board)) modules will not fit.
 - Once firmly installed, connect the [power cable](power-cable-assembly) to the PCB and the power supply and set the the power supply to ±15 V without any devices inserted into the sub-rack. When the power supply is turned on, two green LEDs should light up to signal that the input voltage is of correct polarity and value.
 - Turn off the power supply and insert the devices.
 
