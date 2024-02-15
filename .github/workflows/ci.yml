@@ -103,6 +103,7 @@ jobs:
         with:
           name: ERC_Output
           path: generated
+          retention-days: 7
 
   DRC:
     name: Run DRC
@@ -129,6 +130,7 @@ jobs:
         with:
           name: DRC_Output
           path: generated
+          retention-days: 7
 
   fabrication_output:
     name: 'Produce fabrication outputs'
@@ -157,18 +159,21 @@ jobs:
         with:
           name: manufacturing_files-bom-${{ matrix.variant }}
           path: bom_files_compressed
+          retention-days: 7
 
       - name: Upload schematic files as artifact
         uses: actions/upload-artifact@v4
         with:
           name: manufacturing_files-schematics-${{ matrix.variant }}
           path: schematics
+          retention-days: 7
 
       - name: Upload Gerber files as artifact
         uses: actions/upload-artifact@v4
         with:
           name: manufacturing_files-gerber-${{ matrix.variant }}
           path: gerber_files_compressed
+          retention-days: 7
 
   release:
     name: 'Upload manufacturing files to release'
