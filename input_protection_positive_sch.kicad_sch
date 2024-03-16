@@ -2792,6 +2792,17 @@
 		)
 		(uuid "2bb6ac60-8a5b-4b7c-b8d2-2a68f82e1323")
 	)
+	(text "PCB revision 2.1.1\nThermal image taken (24 °C ambient):\n- 15V @ 12 A (1618)\n- 15V @ 14 A (1626)\n- 15V @ 16 A (1633)\n- 15V @ 16.5 A (OC triggered)\n- -15V @ -12 A (1645)\n- -15V @ -14 A (1659)\n- -15V @ -16 A (1702)\n- -15V @ -16.5 A (1707)\n- -15V @ -16.5 A (OC triggered)"
+		(exclude_from_sim no)
+		(at 101.6 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "30161860-f816-48b0-af33-9ce94cc21f4f")
+	)
 	(text "8 to 24 V input\nUV: 6.5 V (6.34 V to 6.69 V)\nOV: 26 V (25.36 V to 26.88 V)\n±48 V abs. max. due to the\nTVS diode breaking down"
 		(exclude_from_sim no)
 		(at 17.78 60.96 0)
