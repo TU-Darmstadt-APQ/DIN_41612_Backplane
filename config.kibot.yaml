@@ -31,7 +31,7 @@ preflight:
       regex: 'Line on F.Silkscreen'
     - filter: 'Those vias are used to give multimeter probes more grip'
       error: via_dangling
-      regex: 'Via \[-15V\]|Via \[Net-\(Q3-D\)\]|Via \[Net-\(JP3-A\)\]'
+      regex: 'Via \[-15V\]|Via [/Input protection (negative)/Q3-D]'
 
 variants:
   - name: 'default'
