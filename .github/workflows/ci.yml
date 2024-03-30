@@ -90,7 +90,7 @@ jobs:
           submodules: true
 
       - name: Run ERC
-        uses: INTI-CMNB/KiBot@v2_k7
+        uses: INTI-CMNB/KiBot@v2_dk8
         with:
           config: ${{ env.KIBOT_CONFIG }}
           schema: ${{ env.SCHEMATIC_FILE }}
