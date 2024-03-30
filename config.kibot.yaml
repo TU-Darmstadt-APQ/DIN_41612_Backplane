@@ -28,7 +28,7 @@ preflight:
       regex: 'Footprint J\d+'
     - filter: 'The DIN 41612 connectors of different variants overlap'
       error: silk_overlap
-      regex: 'Line on F.Silkscreen'
+      regex: 'Segment on F.Silkscreen'
     - filter: 'Those vias are used to give multimeter probes more grip'
       error: via_dangling
       regex: 'Via \[-15V\]|Via [/Input protection (negative)/Q3-D]'
