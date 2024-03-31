@@ -20,7 +20,7 @@ preflight:
   update_xml: true
   ignore_unconnected: false
   filters:
-    - filter: 'Added custom 3D models to DIN 41612 and 4mm Jack'
+    - filter: 'Disabled some 3D models for DIN 41612 to show a single configuration'
       error: lib_footprint_mismatch
       regex: 'Footprint J\d+'
     - filter: 'The DIN 41612 connectors of different variants overlap'
@@ -28,10 +28,10 @@ preflight:
       regex: 'Footprint J\d+'
     - filter: 'The DIN 41612 connectors of different variants overlap'
       error: silk_overlap
-      regex: 'Line on F.Silkscreen'
+      regex: 'Segment on F.Silkscreen'
     - filter: 'Those vias are used to give multimeter probes more grip'
       error: via_dangling
-      regex: 'Via \[-15V\]|Via \[Net-\(Q3-D\)\]|Via \[Net-\(JP3-A\)\]'
+      regex: 'Via \[-15V\]|Via [/Input protection (negative)/Q3-D]'
 
 variants:
   - name: 'default'
