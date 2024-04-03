@@ -3,5 +3,4 @@
   (lib (name "Custom_logos")(type "KiCad")(uri "${KIPRJMOD}/libraries/Custom_logos.kicad_sym")(options "")(descr ""))
   (lib (name "Texas Instruments")(type "KiCad")(uri "${KIPRJMOD}/libraries/Texas Instruments.kicad_sym")(options "")(descr ""))
   (lib (name "ADI")(type "KiCad")(uri "${KIPRJMOD}/libraries/ADI.kicad_sym")(options "")(descr ""))
-  (lib (name "Vishay")(type "KiCad")(uri "${KIPRJMOD}/libraries/Vishay.kicad_sym")(options "")(descr ""))
 )
