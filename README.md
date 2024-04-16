@@ -59,7 +59,7 @@ The backplane is designed to be mounted inside a 19″ sub-rack chassis.  The mo
 ### Power cable assembly
 The board has a [MSTBA 2,5 HC/ 3-G-5,08](https://www.phoenixcontact.com/en-us/products/pcb-header-mstba-25-hc-3-g-508-1923872) header. The plug required on the cable side is a [MSTB 2,5 HC/ 3-ST-5,08](https://www.phoenixcontact.com/en-us/products/pcb-plug-mstb-25-hc-3-st-508-1911978) Do note, there is an **HC** (16 A) and a **non-HC** (12 A) variant of the connector. The **HC** variant is required to meet the specifications. Typically, the other end of the cable features 4 mm connectors like the [Stäubli LQ-4N-39](https://www.staubli.com/global/en/electrical-connectors/products/t-m-products/products-for-test-accessories/plugs-2-mm-and-4-mm/plugs-LQ-4-LM-4.html) to connect to the DC power supply.
 
-For low currents up to 5 A per rail  (Note: This means 10 A combined on the common return rail) a [LAPP ÖLFLEX CLASSIC 115 CY 3G1,5](https://e.lapp.com/apac/p/cables-for-standard-applications/oelflex-classic-115-cy-3g1-5-1136303) shielded cable with 3 cores and 1.5 mm² wires can be used. For the full rated current a 2.5 mm² 3-core cable like a [LAPP ÖLFLEX CLASSIC 115 CY 3G2,5](https://e.lapp.com/apac/p/cables-for-standard-applications/oelflex-classic-115-cy-3g2-5-1136403) is required. The cables recommended do not have an inner sheath and are therefore lighter and more flexible than regular cables with an inner sheath. This is convenient for routing the cable inside the rack. The cables are not colour-coded, but rather use numbers printed on each of the black wires. Alternative cables that have an inner sheath are [LAPP ÖLFLEX® CLASSIC 110 CY 3G2,5](https://e.lapp.com/apac/p/cables-for-standard-applications/oelflex-classic-110-cy-3g2-5-1135403)  (more rigid) and [LAPP ÖLFLEX CLASSIC 100 CY 300/500V 3G2,5](https://e.lapp.com/apac/p/cables-for-standard-applications/oelflex-classic-100-cy-300-500v-3g2-5-11356502)  (more rigid and colour-coded. The author does not have any affiliation with the Lapp Group and any other cable with similar specifications will work as well. The cables mentioned are meant as examples.
+For low currents up to 5 A per rail  (Note: This means 10 A combined on the common return rail) a [LAPP ÖLFLEX CLASSIC 115 CY 3G1,5](https://e.lapp.com/apac/p/cables-for-standard-applications/oelflex-classic-115-cy-3g1-5-1136303) shielded cable with 3 cores and 1.5 mm² wires can be used. For the full rated current a 2.5 mm² 3-core cable like a [LAPP ÖLFLEX CLASSIC 115 CY 3G2,5](https://e.lapp.com/apac/p/cables-for-standard-applications/oelflex-classic-115-cy-3g2-5-1136403) is required. The cables recommended do not have an inner sheath and are therefore lighter and more flexible than regular cables with an inner sheath. This is convenient for routing the cable inside the rack. The cables are not colour-coded, but rather use numbers printed on each of the black wires. Alternative cables that have an inner sheath are [LAPP ÖLFLEX® CLASSIC 110 CY 3G2,5](https://e.lapp.com/apac/p/cables-for-standard-applications/oelflex-classic-110-cy-3g2-5-1135403)  (more rigid) and [LAPP ÖLFLEX CLASSIC 100 CY 300/500V 3G2,5](https://e.lapp.com/apac/p/cables-for-standard-applications/oelflex-classic-100-cy-300-500v-3g2-5-11356502)  (more rigid *and* colour-coded). The author does not have any affiliation with the Lapp Group and any other cable with similar specifications will work as well. The cables mentioned are meant as examples.
 
 To assemble a cable proceed as follows to produce a cable with the dimensions shown below.
 ![Power cable assembly](images/power_cable.png)
@@ -71,7 +71,8 @@ The backplane side, using a [MSTB 2,5 HC/ 3-ST-5,08](https://www.phoenixcontact.
 2. Trim the braid to about 1 cm and fold it back
 3. Put shrink tube over the braid and the cut
 4. Strip the three wires using a wire stripper
-5. Insert the wire labeled number 1 into position 1, the green/yellow wire then goes into the center, and the black wire labeled number 2 must be inserted into position 3
+5. Twist the cores
+6. Insert the wire labeled number 1 into position 1, the green/yellow wire then goes into the center, and the black wire labeled number 2 must be inserted into position 3
 
 #### Power supply connectors
 The 4 mm connectors for the DC power supply require more work because the common conductor needs to be spliced. The desired end result is:
@@ -79,16 +80,24 @@ The 4 mm connectors for the DC power supply require more work because the common
 - 4 connectors (red, blue, 2x black) on 15 cm wires
 - 1 yellow connector on a 20 cm wire
 
-T o get there, do the following:
+To get there, do the following:
 
 1. Cut back the outer sheath by 15 cm and remove it
 2. Trim the braid to about 2 cm and solder an 18 cm yellow 1.5 mm² wire to it.
 3. Place shrink tube over the yellow solder joint
-4. Trim the center green/yellow conductor to about 2 cm
+4. Trim the center green/yellow conductor of the cabel to about 2 cm
 5. Solder two 13 cm  2.5 mm² wires to it and place black shrink tube over the solder joint.
 6. Place black shrink tube over the black splice of the common rail
 7. Place shrink tube over all wires
-8. Strip all cables using a wire stripper and solder in the 4 mm connectors
+8. Strip all five cores using a wire stripper,
+9. Twist the cores
+10.  Solder the 4 mm connectors to the wires
+
+#### Power cable labels
+Use a label maker and put a label stating the maximum current and voltage on the cable:
+
+- `16 A/60 V max` if using an **HC** connector **and** 2.5 mm² cables
+- `12 A/60 V max` if using a **non-HC** connector **or** any 1.5 mm² cables (excluding the yellow cable connected to the braid)
 
 ## Design Files
 ### For production
