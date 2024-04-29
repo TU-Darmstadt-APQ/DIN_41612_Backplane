@@ -1,6 +1,3 @@
 [submodule "footprints.pretty"]
 	path = footprints.pretty
 	url = https://github.com/PatrickBaus/footprints.pretty.git
-[submodule "footprints.3dshapes"]
-	path = footprints.3dshapes
-	url = https://github.com/PatrickBaus/footprints.3dshapes
