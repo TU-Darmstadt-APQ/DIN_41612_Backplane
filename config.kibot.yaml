@@ -16,22 +16,23 @@ globals:
 
 preflight:
   run_drc: true
-  run_erc: true
   update_xml: true
   ignore_unconnected: false
-  filters:
-    - filter: 'Disabled some 3D models for DIN 41612 to show a single configuration'
-      error: lib_footprint_mismatch
-      regex: 'Footprint J\d+'
-    - filter: 'The DIN 41612 connectors of different variants overlap'
-      error: courtyards_overlap
-      regex: 'Footprint J\d+'
-    - filter: 'The DIN 41612 connectors of different variants overlap'
-      error: silk_overlap
-      regex: 'Segment on F.Silkscreen'
-    - filter: 'Those vias are used to give multimeter probes more grip'
-      error: via_dangling
-      regex: 'Via \[-15V\]|Via [/Input protection (negative)/Q3-D]'
+  erc:
+    - enabled: true
+      filters:
+        - filter: 'Manually modified DIN 41612 connectors to hide their 3D model as the different connector options are overlapping.'
+          error: lib_footprint_mismatch
+          regex: 'Footprint J\d+'
+        - filter: 'The DIN 41612 connectors of different variants overlap.'
+          error: courtyards_overlap
+          regex: 'Footprint J\d+'
+        - filter: 'The DIN 41612 connectors of different variants overlap.'
+          error: silk_overlap
+          regex: 'Segment on F.Silkscreen'
+        - filter: 'Those vias are used to give multimeter probes more grip.'
+          error: via_dangling
+          regex: 'Via \[-15V\]|Via [/Input protection (negative)/Q3-D]'
 
 variants:
   - name: 'default'
