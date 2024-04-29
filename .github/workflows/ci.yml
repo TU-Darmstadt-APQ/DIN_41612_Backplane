@@ -38,8 +38,6 @@ jobs:
     steps:
       - name: Download repository
         uses: actions/checkout@v4
-        with:
-          submodules: true
 
       - name: Parse repository name
         id: repo-basename
