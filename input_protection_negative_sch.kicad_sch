@@ -6,9 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "Negative rail input protection")
-		(date "2023-12-05")
-		(rev "2.1.1")
-		(comment 1 "Copyright (©) 2023, Patrick Baus <patrick.baus@physik.tu-darmstadt.de>")
+		(date "2024-05-09")
+		(rev "2.1.2")
+		(comment 1 "Copyright (©) 2024, Patrick Baus <patrick.baus@physik.tu-darmstadt.de>")
 		(comment 2 "Licensed under CERN OHL-W v2.0")
 	)
 	(lib_symbols
