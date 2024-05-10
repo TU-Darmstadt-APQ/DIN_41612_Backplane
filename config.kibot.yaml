@@ -36,9 +36,15 @@ preflight:
 
 variants:
   - name: 'default'
-    comment: 'Minimal PCB without connectors'
+    comment: 'Minimal PCB without DIN connectors'
     type: kibom
     file_id: _(default)
+
+  - name: 'PCBA'
+    comment: 'PCB without DIN connectors and a simplified BOM that does not contain cable connectors.'
+    type: kibom
+    file_id: _(PCBA)
+    variant: PCBA
 
   - name: 'HBME'
     comment: 'Fischer HBME 14 layout'
