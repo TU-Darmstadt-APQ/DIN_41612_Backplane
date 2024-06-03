@@ -25,7 +25,7 @@
 \title{APQ Eurocard backplane}
 \author{Patrick Baus, APQ}
 \date{\today}
-\newcommand{\versionNumber}{1.0.2}
+\newcommand{\versionNumber}{1.1.1}
 \revision{Revision \versionNumber}
 \companylogo{\includegraphics[width=55mm]{images/titel_apq-logo_cropped.pdf}}
 
@@ -55,7 +55,7 @@
 \end{itemize}
 
 \section{General Description}
-The Eurocard backplane is compatible to several \qty{14}{HP} and \qty{28}{HP} rack mounted devices in the APQ device range. It is mounted in the rear of a \qty{3}{U} \qty{19}{''} subrack and supplies up to \num{6} devices with a bipolar \qty{\pm 15}{\V} (typical) voltage. The backplane can be used with most commercially available subrack chassis like the \href{https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.1/19%22%20subracks/$catalogue/fischerData/PR/BGT384_180/search.xhtml}{Fischer Elektronik BGT 384}.
+The Eurocard backplane is compatible with several \qty{14}{HP} and \qty{28}{HP} rack mounted devices in the APQ device range. It is mounted in the rear of a \qty{3}{U} \qty{19}{''} subrack and supplies up to \num{6} devices with a bipolar \qty{\pm 15}{\V} (typical) voltage. The backplane can be used with most commercially available subrack chassis like the \href{https://www.fischerelektronik.de/web_fischer/en_GB/cases/N05.1/19%22%20subracks/$catalogue/fischerData/PR/BGT384_180/search.xhtml}{Fischer Elektronik BGT 384}.
 Each slot can be configured to either hold devices enclosed in \href{https://www.fischerelektronik.com/web_fischer/en_GB/cases/N06.011/19%22%20insert%20modules/$catalogue/fischerData/PR/HBME14_/index.xhtml}{Fischer Elektronik HB ME 14}
 modules or open-frame modules designed around the \href{https://www.fischerelektronik.com/web_fischer/en_GB/cases/N06.05/Part%20front%20panels/$catalogue/fischerData/PR/TFP14/index.xhtml}{Fischer Elektronik TFP 3 14}
 front panels.
@@ -88,9 +88,10 @@ The backplane is powered by a commercially available bench power supply to meet 
         \thickhline
         Version& Date& Comment\\
         \hline
-        1.0.0 &2023-10-19 & Initial release. Compatible to hardware revision 2.0.0.\\
+        1.0.0 &2023-10-19 & Initial release. Compatible with hardware revision 2.0.0.\\
         1.0.1 &2024-01-02 & Fixed typos.\\
-        1.1.0 &2024-03-30 & Added backplane photo. Updated power cable image. Compatible to hardware revision 2.1.0.\\
+        1.1.0 &2024-03-30 & Added backplane photo. Updated power cable image. Compatible with hardware revision 2.1.0.\\
+        \versionNumber &2024-06-03 & Added TARIC number and environmental classification.\\
         \thickhline
     \end{tabularx}
 \end{table}
@@ -160,7 +161,6 @@ All specifications are for $\qty{-20}{\celsius} \leq T_A \leq \qty{60}{\celsius}
 \end{table}
 
 \section{Absolute Maximum Ratings}
-
 \begin{table}[h]
     \caption{}
     \begin{tabularx}{\textwidth}{l | X}
@@ -178,6 +178,18 @@ All specifications are for $\qty{-20}{\celsius} \leq T_A \leq \qty{60}{\celsius}
 
 \textbf{Note:} Stresses beyond those listed under \textit{Absolute Maximum Ratings} may cause permanent damage to the device. These are stress ratings only, which do not imply functional operation of the device at these or any other conditions beyond those indicated under \textit{Operating conditions}. Exposure to absolute-maximum-rated conditions for extended periods may affect device reliability.
 
+\section{Export and Environmental Classification}
+\begin{table}[h]
+    \caption{}
+    \begin{tabularx}{\textwidth}{l | X}
+        \thickhline
+        TARIC & 85340011 \\
+        RoHS compliant & Yes \\
+        \thickhline
+    \end{tabularx}
+\end{table}
+
+\newpage
 \section{Accessories}
 Every backplane comes with a \qty{2}{\m} power supply cable as shown in figure \ref{fig:power_cable}. The cable has a green Phoenix Contact \texttt{\small{MSTB 2,5 HC/ 3-ST-5,08}} connector on one end and five \qty{4}{\mm} connectors on the other end. These connectors can be used to connect the backplane to a standard two channel DC power supply. To simplify the connection, the common connector is spliced so that two channels of the power supply can be easily chained together to create the dual positive/negative supply required for the backplane.
 
