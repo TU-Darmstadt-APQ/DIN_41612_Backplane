@@ -135,7 +135,7 @@ git clone --recurse-submodules https://github.com/TU-Darmstadt-APQ/DIN_41612_Bac
 ```
 
 ## Related Repositories
-See the following repositories for more information as these are part of the [design files](#design Files).
+See the following repositories for more information as these are part of the [design files](#design-files).
 
 - [KiCad footprints](https://github.com/PatrickBaus/footprints.pretty)
 - [KiCAD 3D models](https://github.com/PatrickBaus/footprints.3dshapes)
