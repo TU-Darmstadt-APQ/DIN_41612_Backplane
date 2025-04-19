@@ -2,7 +2,7 @@
 # pylint: disable=duplicate-code,invalid-name
 # pylint: enable=invalid-name
 """
-This Python scrip calculates the overvoltage, undervoltage and overcurrent parameters for the DIN 41612 backplane
+This Python script calculates the overvoltage, undervoltage and overcurrent parameters for the DIN 41612 backplane
 datasheet. These numbers are derived using monto-carlo simulation and take into account the component parameters to
 calculate the typical and minimum and maximum values used in the datasheet. This script is used for the positive rail
 employing the Analog Devices ADM1270: https://www.analog.com/media/en/technical-documentation/data-sheets/ADM1270.pdf.
@@ -100,7 +100,7 @@ def plot_result(
         If not None, write the plot to the given filename
     """
     ax1 = plt.subplot(111)
-    # First, bin the results. Make sure to use an odd number of bins is used to have a central bin to cover the maximum
+    # First, bin the results. Make sure an odd number of bins is used to have a central bin to cover the maximum
     # of the gaussian.
     n, bins, _ = ax1.hist(res, bins=11, color=colors[0])
     # Find the bin with the highest count, aka the maximum.

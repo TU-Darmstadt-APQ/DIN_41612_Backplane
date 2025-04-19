@@ -2,7 +2,7 @@
 # pylint: disable=duplicate-code,invalid-name
 # pylint: enable=invalid-name
 """
-This Python scrip calculates the overvoltage, undervoltage and overcurrent parameters for the DIN 41612 backplane
+This Python script calculates the overvoltage, undervoltage and overcurrent parameters for the DIN 41612 backplane
 datasheet. These numbers are derived using monto-carlo simulation and take into account the component parameters to
 calculate the typical and minimum and maximum values used in the datasheet. This script is used for the negative rail
 employing the Texas Instruments LM5067: https://www.ti.com/lit/ds/symlink/lm5067.pdf.
@@ -101,7 +101,7 @@ def plot_result(
     """
 
     ax1 = plt.subplot(111)
-    # First, bin the results. Make sure to use an odd number of bins is used to have a central bin to cover the maximum
+    # First, bin the results. Make sure an odd number of bins is used to have a central bin to cover the maximum
     # of the gaussian.
     n, bins, _ = ax1.hist(res, bins=11, color=colors[0])
     # Find the bin with the highest count, aka the maximum.
